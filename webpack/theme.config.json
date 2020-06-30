@@ -1,7 +1,9 @@
 {
-  "proxy": "https://wc2020.dev",
-  "criticalUrls": [{
-    "url": "https://wc2020.dev/",
-    "dest": "home"
-  }]
+    "proxy": "http://wordcampcolombia.local/",
+    "criticalUrls": [
+        {
+            "url": "http://wordcampcolombia.local/",
+            "dest": "home"
+        }
+    ]
 }
