@@ -1,0 +1,21 @@
+@function strip-units($number){
+  @return ($number / ($number * 0 + 1));
+}
+
+@function to-rem($des, $base: $font-size-base){
+  @if not unitless($des) {
+      $des: strip-units($des);
+  }
+  $base: strip-units($base);
+  @return ($des / $base) *1rem;
+}
+
+//
+// Calculates proper line-height given a
+// font-size to maintain vertical rhythm.
+//
+@function calculate-line-height($font-size) {
+  $line-height-size: ceil($font-size / $line-height-computed) * ($line-height-computed / $font-size);
+
+  @return $line-height-size;
+}

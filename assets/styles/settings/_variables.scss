@@ -1,0 +1,15 @@
+$start: left;
+$end: right;
+
+//Typography
+$font-family-sans-serif: "GT Walsheim", "Arial", Gadget, sans-serif !default;
+$font-family-base: $font-family-sans-serif;
+
+$golden-ratio: 1.618;
+$font-size-base: 18px;
+$font-weight-base: 400;
+
+$line-height-base: $golden-ratio;
+$line-height-computed: floor($font-size-base * $line-height-base);
+
+
