@@ -1,38 +1,20 @@
-// Primary button
-.btn-primary {
-  color: black;
-  padding: 8px 10px;
+.button__primary {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxMXB4IiBoZWlnaHQ9IjExcHgiIHZpZXdCb3g9IjAgMCAxMSAxMSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgPHRpdGxlPmRpYWdvbmFsLWFycm93PC90aXRsZT4gICAgPGcgaWQ9IkxhbmRpbmctMjAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9IkhvbWUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDguMDAwMDAwLCAtMTU3NS4wMDAwMDApIiBmaWxsPSIjMDAwMDAwIiBmaWxsLXJ1bGU9Im5vbnplcm8iPiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0xNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjMzLjAwMDAwMCwgMTU1OS4wMDAwMDApIj4gICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLjAwMDAwMCwgNS4wMDAwMDApIj4gICAgICAgICAgICAgICAgICAgIDxnIGlkPSJkaWFnb25hbC1hcnJvdyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE0LjAwMDAwMCwgMTEuMDAwMDAwKSI+ICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTkuMzUyNjQsMCBMMi43OTkwNCwwIEwyLjc5OTA0LDIuMTg0NjQgTDYuNzE1Nzc2LDIuMTg0NjQgTDAuMDA4NjQsOC44OTE0NTYgTDEuNTUzMDI0LDEwLjQzNjQ4IEw4LjI2MDE2LDMuNzI5MDI0IEw4LjI2MTQ0LDcuNjQ1NzYgTDEwLjQ0NDgsNy42NDU3NiBMMTAuNDQ0OCwxLjA5MjE2IEMxMC40NDQ4LDAuNDkwODggOS45NTUyNjQsMCA5LjM1MjY0LDAgWiIgaWQ9IlBhdGgiPjwvcGF0aD4gICAgICAgICAgICAgICAgICAgIDwvZz4gICAgICAgICAgICAgICAgPC9nPiAgICAgICAgICAgIDwvZz4gICAgICAgIDwvZz4gICAgPC9nPjwvc3ZnPg==) #FFF56C;
+  background-position: 91% 8px;
+  background-repeat: no-repeat;
+  border: solid 1px #000000;
+  box-shadow: 1px 0px 0px #000000, 0px -1px 0px #000000, 2px -1px 0px #000000, 1px -2px 0px #000000, 3px -2px 0px #000000, 2px -3px 0px #000000, 4px -3px 0px #000000, 3px -4px 0px #000000, 5px -4px 0px #000000, 4px -5px 0px #000000, 6px -5px 0px #000000, 5px -6px 0px #000000, 7px -6px 0px #000000, 6px -7px 0px #000000, 8px -7px 0px #000000, 7px -8px 0px #000000, 9px -8px 0px #000000, 8px -8px 0px #000000;
+  color: #000000 !important;
+  font-size: to-rem(14);
+  letter-spacing: to-rem(2);
+  padding: to-rem(6) to-rem(36) to-rem(11) to-rem(16);
   text-decoration: none;
-  background-color: #fff56c;
   text-transform: uppercase;
-  font-weight: bold;
-  border: 2px solid black;
-  position: relative;
-  box-shadow: 5px -5px 0 0 black;
-  &:before {
-    position: absolute;
-    content: '';
-    display: block;
-    width:0;
-    height:0;
-    top: -11px;
-    left: 3px;
-    margin-left: -5px;
-    border: 5px solid transparent;
-    border-bottom: 5px solid black;
-  }
-  &:after {
-    position: absolute;
-    content: '';
-    display: block;
-    width:0;
-    height:0;
-    bottom: -6px;
-    right: -6px;
-    margin-left: 0px;
-    border: 5px solid transparent;
-    border-top: 5px solid black;
-    z-index: -1;
+  transition: margin-bottom 0.3s ease, margin-left 0.3s ease, box-shadow 0.3s ease;
+  font-family: $font-family-secondary;
+  &:hover {
+    box-shadow: 0px 0px 0px #000000;
+    margin-bottom: 10px;
+    margin-left: 10px;
   }
 }
-
