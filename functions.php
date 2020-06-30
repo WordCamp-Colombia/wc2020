@@ -1,5 +1,5 @@
 <?php
-/* enqueue scripts and style from parent theme */        
+/* enqueue scripts and style from parent theme */
 function twentytwenty_styles() {
 	wp_enqueue_style( 'parent', get_template_directory_uri() . '/style.css' );
 }
