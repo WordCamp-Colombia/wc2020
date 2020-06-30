@@ -1,0 +1,38 @@
+// Primary button
+.btn-primary {
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  background-color: #fff56c;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid black;
+  position: relative;
+  box-shadow: 5px -5px 0 0 black;
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width:0;
+    height:0;
+    top: -11px;
+    left: 3px;
+    margin-left: -5px;
+    border: 5px solid transparent;
+    border-bottom: 5px solid black;
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width:0;
+    height:0;
+    bottom: -6px;
+    right: -6px;
+    margin-left: 0px;
+    border: 5px solid transparent;
+    border-top: 5px solid black;
+    z-index: -1;
+  }
+}
+
