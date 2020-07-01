@@ -8,7 +8,6 @@
 @import "vendors/normalize";
 @import "vendors/twenty";
 
-
 //mixins
 @import "mixins/box-sizing";
 @import "mixins/clearfix";
@@ -21,11 +20,10 @@
 @import "core/fonts";
 @import "core/base";
 
-
 //modules, the real css that you write everyday based on the design
+@import "modules/header";
 @import "modules/layout";
 @import "modules/buttons";
-
 
 // Helpers
 @import "helpers/helpers";

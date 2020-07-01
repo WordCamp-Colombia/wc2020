@@ -1,0 +1,41 @@
+// Header llamado a ponentes
+
+.footer-widgets {
+    &.column-one {
+        .widget_custom_html {
+            &:first-of-type {
+                background-color: $primary;
+                text-align: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                a {
+                    @extend .title--button;
+                    text-decoration: none;
+                    transition: all 0.3s ease-in;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Ajustamos la altura cuando estamos logueado
+
+.logged-in {
+    .footer-widgets {
+        &.column-one {
+            .widget_custom_html {
+                &:first-of-type {
+                    top: 32px;
+                }
+            }
+        }
+    }
+}
