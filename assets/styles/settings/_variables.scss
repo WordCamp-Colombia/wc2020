@@ -10,7 +10,5 @@ $golden-ratio: 1.618;
 $font-size-base: 18px;
 $font-weight-base: 400;
 
-$line-height-base: $golden-ratio;
+$line-height-base: 24px;
 $line-height-computed: floor($font-size-base * $line-height-base);
-
-

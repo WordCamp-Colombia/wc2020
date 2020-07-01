@@ -1,17 +1,36 @@
 // Helpers
 
 .mb-0 {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .mt-0 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .ml-0 {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 .mr-0 {
-  margin-right: 0;
+    margin-right: 0;
+}
+
+.title {
+    &--section {
+        font-family: $font-family-secondary;
+        font-size: to-rem(62px);
+        line-height: 60px;
+        letter-spacing: -0.738095px;
+        color: $secondary;
+    }
+    &--button {
+        color: $black !important;
+        font-size: to-rem(14);
+        letter-spacing: to-rem(2);
+        padding: to-rem(6) to-rem(36) to-rem(11) to-rem(16);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $font-family-secondary;
+    }
 }
