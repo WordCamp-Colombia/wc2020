@@ -1,0 +1,246 @@
+
+.flex-box {
+  margin: 0 1rem 1rem 0;
+}
+.flex-grid {
+  display: flex;
+  display: -webkit-flex;
+
+  &.flex-column {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+
+  &.flex-row {
+    flex-direction: row;
+    -webkit-flex-direction: row;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+  }
+
+  &.nowrap {
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+  }
+
+  &.aic {
+    align-items: center;
+    -webkit-align-items: center;
+  }
+
+  &.aife {
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+  }
+  
+  &.ais {
+    align-items: stretch;
+    -webkit-align-items: stretch;
+  }
+
+  &.acc {
+    align-content: center;
+    -webkit-align-content: center;
+  }
+  
+  &.acs {
+    align-content: stretch;
+    -webkit-align-content: stretch;
+  }
+
+  &.jcc {
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+
+  &.jcfe {
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+  }
+
+  &.jcsa {
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+  }
+
+  &.jcsb {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+  }
+
+  .flex-box {
+    flex: 1; /*stretches cells to fill container*/
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    height: auto;
+    
+    &.asfs {
+      align-self: flex-start;
+    }
+    
+    &.asfe {
+      align-self: flex-end;
+    }
+    
+    &.asc {
+      align-self: center;
+    }
+    
+    &.ass {
+      align-self: stretch;
+    }
+
+    .fit {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .fill {
+      width: 100%;
+      height: auto;
+    }
+  } //box
+} //grid
+
+
+// width & heigth helpers
+.jcfe {
+  justify-content: flex-end !important;
+  -webkit-justify-content: flex-end !important;
+}
+
+.w-4of12 {
+  width: 25%;
+}
+
+.w-6of12 {
+  width: 50%;
+}
+
+.w-8of12 {
+  width: 75%;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.flex-center {
+  margin: 0 auto;
+}
+
+.offset-4of12 {
+  margin-left: 25%;
+}
+
+.offset-6of12 {
+  margin-left: 50%;
+}
+
+.offset-8of12 {
+  margin-left: 75%;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+// uses flex property to control widths
+@for $i from 1 through 12 {
+  .flex-#{$i}{
+    flex: $i !important;
+    -webkit-flex: $i !important;
+    -webkit-box-flex: $i !important;
+  }
+}
+
+// nudgers
+.nudge-down {
+  margin-bottom: 1rem;
+}
+
+.nudge-up {
+  margin-top: 1rem;
+}
+
+.nudge-right {
+  margin-right: 1rem;
+}
+
+.nudge-left {
+  margin-left: 1rem;
+}
+
+
+/////////////////////////////////////////////
+// @mixins for scss clases
+
+@mixin flex-grid {
+  display: flex;
+  display: -webkit-flex;  
+}
+
+@mixin flex-column {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+@mixin flex-row {
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+@mixin wrap {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+@mixin nowrap {
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+}
+
+@mixin aic {
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+@mixin acc {
+  align-content: center;
+  -webkit-align-content: center;
+}
+
+@mixin jcc {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+@mixin jcfe {
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+
+@mixin flex-box {
+  flex: 1;
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+  height: auto;
+}
+
+@mixin flex-col-center {
+  @include flex-grid;
+  @include flex-column;
+  @include jcc;
+  @include aic;
+}
