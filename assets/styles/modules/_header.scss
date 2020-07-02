@@ -13,10 +13,15 @@
                 width: 100%;
                 padding-top: 7px;
                 padding-bottom: 7px;
+                z-index: 2;
+                .widget-content {
+                    font-size: 18px;
+                }
                 a {
                     @extend .title--button;
                     text-decoration: none;
                     transition: all 0.3s ease-in;
+                    padding: 0;
                     &:hover {
                         text-decoration: underline;
                     }
@@ -33,7 +38,10 @@
         &.column-one {
             .widget_custom_html {
                 &:first-of-type {
-                    top: 32px;
+                    top: 46px;
+                    @media screen and (min-width: 768px) {
+                        top: 32px;
+                    }
                 }
             }
         }
