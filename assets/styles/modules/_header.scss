@@ -1,3 +1,21 @@
+// Main Menu
+
+.primary-menu-wrapper {
+    .primary-menu {
+        > li {
+            > a {
+                color: $secondary;
+                font-family: $font-family-sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 17px;
+                letter-spacing: -0.190476px;
+            }
+        }
+    }
+}
+
 // Header llamado a ponentes
 
 .footer-widgets {
