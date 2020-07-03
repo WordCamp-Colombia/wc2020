@@ -109,7 +109,7 @@ button.close-nav-toggle:focus {
     &__title {
         font-family: $font-family-secondary;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 700;
         font-size: 46px;
         line-height: 50px;
         letter-spacing: -0.880952px;
@@ -137,6 +137,10 @@ button.close-nav-toggle:focus {
         font-size: 30px;
         @media screen and (min-width: 768px) {
             font-size: 35px;
+        }
+        @media screen and (min-width: 1024px) {
+            font-size: 74px;
+            line-height: 64px;
         }
     }
 }
