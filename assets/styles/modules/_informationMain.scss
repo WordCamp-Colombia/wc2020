@@ -1,0 +1,29 @@
+.section {
+    &__informationMain {
+        color: #191919;
+        font-family: Archivo Black;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.738095px;
+        line-height: 40px;
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+        padding: 50px 30px 0 !important;
+        @media screen and (min-width: 600px) {
+            font-size: 50px;
+            line-height: 55px;
+        }
+        @media screen and (min-width: 768px) {
+            font-size: 62px;
+            line-height: 60px;
+            padding-right: 175px !important;
+            padding-left: 68px !important;
+        }
+
+        @media screen and (min-width: 1024px) {
+            margin-top: 90px !important;
+            padding: 110px 482px 0 72px !important;
+        }
+    }
+}
