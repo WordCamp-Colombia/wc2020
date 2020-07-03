@@ -72,3 +72,32 @@
         }
     }
 }
+
+// Header menu mobile
+
+.header-inner {
+    padding-bottom: 50px;
+}
+
+.toggle-inner .toggle-text {
+    display: none;
+}
+
+button.close-nav-toggle:focus {
+    outline: 0;
+}
+
+.modal-menu > li > .ancestor-wrapper > a,
+.modal-menu > li > a {
+    color: $secondary !important;
+    font-family: $font-family-sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 17px;
+    letter-spacing: -0.190476px;
+    @media screen and (min-width: 700px) {
+        font-size: 20px;
+        padding: 25px 10px;
+    }
+}
