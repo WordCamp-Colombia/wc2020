@@ -1,0 +1,21 @@
+.postMain {
+    max-width: 1024px;
+    margin-right: 0;
+    margin-top: 50px;
+    .wp-block-column {
+        position: relative;
+        margin-bottom: 15px;
+        @media screen and (min-width: 600px) {
+            margin-bottom: 30px;
+        }
+        > a {
+            position: absolute;
+            top: 40px;
+            left: -5px;
+
+            @media screen and (min-width: 1024px) {
+                left: -15px;
+            }
+        }
+    }
+}
