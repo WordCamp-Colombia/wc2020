@@ -220,34 +220,34 @@ h6,
 
 h1,
 .heading-size-1 {
-    font-size: 3.6rem;
+    font-size: 40px;
     font-weight: 800;
     line-height: 1.138888889;
 }
 
 h2,
 .heading-size-2 {
-    font-size: 3.2rem;
+    font-size: 35px;
 }
 
 h3,
 .heading-size-3 {
-    font-size: 2.8rem;
+    font-size: 30px;
 }
 
 h4,
 .heading-size-4 {
-    font-size: 2.4rem;
+    font-size: 23px;
 }
 
 h5,
 .heading-size-5 {
-    font-size: 2.1rem;
+    font-size: 18px;
 }
 
 h6,
 .heading-size-6 {
-    font-size: 1.6rem;
+    font-size: 14px;
     letter-spacing: 0.03125em;
     text-transform: uppercase;
 }
@@ -4050,20 +4050,9 @@ div.comment:first-of-type {
     border-width: 0;
 }
 
-.footer-top-visible .footer-nav-widgets-wrapper,
-.footer-top-hidden #site-footer {
-    margin-top: 5rem;
-}
-
 .reduced-spacing.footer-top-visible .footer-nav-widgets-wrapper,
 .reduced-spacing.footer-top-hidden #site-footer {
     border-top-width: 0.1rem;
-}
-
-.footer-top,
-.footer-widgets-outer-wrapper,
-#site-footer {
-    padding: 3rem 0;
 }
 
 /* Footer Top -------------------------------- */
@@ -4129,16 +4118,6 @@ ul.footer-social li {
 
 .footer-social a::before {
     font-size: 1.6rem;
-}
-
-/* Footer Widgets ---------------------------- */
-
-.footer-widgets-outer-wrapper {
-    border-bottom: 0.1rem solid #dedfdf;
-}
-
-.footer-widgets + .footer-widgets {
-    margin-top: 3rem;
 }
 
 /* Footer Bottom ----------------------------- */
@@ -4403,51 +4382,33 @@ a.to-the-top > * {
     /* TITLES */
 
     h1,
-    .heading-size-1,
-    h2,
-    .heading-size-2,
-    h3,
-    .heading-size-3 {
-        margin: 6rem auto 3rem;
-    }
-
-    h4,
-    .heading-size-4,
-    h5,
-    .heading-size-5,
-    h6,
-    .heading-size-6 {
-        margin: 4.5rem auto 2.5rem;
-    }
-
-    h1,
     .heading-size-1 {
-        font-size: 6.4rem;
+        font-size: 64px;
     }
 
     h2,
     .heading-size-2 {
-        font-size: 4.8rem;
+        font-size: 48px;
     }
 
     h3,
     .heading-size-3 {
-        font-size: 4rem;
+        font-size: 36px;
     }
 
     h4,
     .heading-size-4 {
-        font-size: 3.2rem;
+        font-size: 24px;
     }
 
     h5,
     .heading-size-5 {
-        font-size: 2.4rem;
+        font-size: 18px;
     }
 
     h6,
     .heading-size-6 {
-        font-size: 1.8rem;
+        font-size: 16px;
     }
 
     /* INPUTS */
@@ -5140,10 +5101,6 @@ a.to-the-top > * {
 
     /* FOOTER WIDGETS */
 
-    .footer-widgets-outer-wrapper {
-        padding: 8rem 0;
-    }
-
     .footer-widgets-wrapper {
         display: flex;
         justify-content: space-between;
@@ -5691,13 +5648,6 @@ a.to-the-top > * {
 
 @media (min-width: 1220px) {
     /* Element Base -------------------------- */
-
-    /* TITLES */
-
-    h1,
-    .heading-size-1 {
-        font-size: 8.4rem;
-    }
 
     /* Helper Classes ------------------------ */
 
