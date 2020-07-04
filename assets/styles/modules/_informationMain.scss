@@ -26,4 +26,43 @@
             padding: 110px 482px 0 72px !important;
         }
     }
+    &__informationBotton {
+        .wp-block-group__inner-container {
+            max-width: 800px;
+        }
+        &--left {
+            &Title {
+                font-family: Archivo;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 24px;
+                color: $secondary;
+                display: block;
+                width: 270px;
+                margin-bottom: 10px;
+            }
+            &Flag {
+                display: inline-block;
+                background-color: $white;
+                font-size: 18px;
+                padding: 5px 10px;
+                border: 1px solid $black;
+                font-weight: 700;
+                text-transform: uppercase;
+                border-bottom-width: 3px;
+            }
+            &Link {
+                display: block;
+                margin-top: 39px;
+                font-family: Archivo;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 17px;
+                color: $black;
+                text-decoration: none;
+            }
+        }
+    }
 }
