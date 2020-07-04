@@ -1,0 +1,10 @@
+.footer-widgets {
+    @media screen and (min-width: 700px) {
+        width: 100%;
+    }
+    .wcb_widget_sponsors {
+        .widget-title {
+            text-align: center;
+        }
+    }
+}

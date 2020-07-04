@@ -143,4 +143,16 @@ button.close-nav-toggle:focus {
             line-height: 64px;
         }
     }
+
+    &__right {
+        position: absolute;
+        > a {
+            position: absolute;
+            top: 40px;
+            left: -5px;
+            @media screen and (min-width: 1024px) {
+                left: -15px;
+            }
+        }
+    }
 }
