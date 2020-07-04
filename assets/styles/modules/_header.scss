@@ -145,7 +145,7 @@ button.close-nav-toggle:focus {
     }
 
     &__right {
-        position: absolute;
+        position: relative;
         > a {
             position: absolute;
             top: 40px;
