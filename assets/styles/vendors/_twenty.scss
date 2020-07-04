@@ -2269,7 +2269,7 @@ body:not(.singular) main > article:first-of-type {
 
 .singular .entry-header {
     background-color: #fff;
-    padding: 4rem 0;
+    padding: 15px 0;
 }
 
 .entry-categories {
@@ -2484,7 +2484,7 @@ h2.entry-title {
 /* Author Bio -------------------------------- */
 
 .author-bio {
-    margin-top: 4rem;
+    margin-top: 30px;
 }
 
 .hide-avatars .author-bio {
@@ -3433,11 +3433,11 @@ figure.wp-block-table.is-style-stripes {
 /* Comment Headers ----------------------------- */
 
 .comments-wrapper {
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .comment-reply-title {
-    margin: 0 0 4rem 0;
+    margin: 0 0 2rem 0;
     text-align: center;
 }
 
@@ -4658,10 +4658,6 @@ a.to-the-top > * {
 
     /* POST HEADER */
 
-    .singular .entry-header {
-        padding: 8rem 0;
-    }
-
     .entry-categories {
         margin-bottom: 3rem;
     }
@@ -4711,7 +4707,7 @@ a.to-the-top > * {
     /* AUTHOR BIO */
 
     .author-bio {
-        margin-top: 8rem;
+        margin-top: 50px;
         min-height: 8rem;
         padding-left: 10rem;
         position: relative;
@@ -4949,7 +4945,7 @@ a.to-the-top > * {
     }
 
     .comment-reply-title {
-        margin-bottom: 4.6rem;
+        margin-bottom: 2rem;
     }
 
     .comment-respond p.comment-notes,
@@ -5767,9 +5763,9 @@ a.to-the-top > * {
     /* Comments ------------------------------ */
 
     .comment-reply-title {
-        font-size: 5.6rem;
+        font-size: 46px;
         line-height: 1.2;
-        margin-bottom: 6rem;
+        margin-bottom: 2rem;
     }
 
     .comment-respond p.comment-notes,
@@ -5778,7 +5774,7 @@ a.to-the-top > * {
     }
 
     .comments .comment-respond .comment-reply-title {
-        font-size: 4.8rem;
+        font-size: 46px;
     }
 
     .comments .comment-respond p.comment-notes,
