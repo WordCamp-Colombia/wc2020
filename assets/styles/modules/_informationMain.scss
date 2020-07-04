@@ -32,11 +32,9 @@
         }
         &--left {
             &Title {
-                font-family: Archivo;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 20px;
-                line-height: 24px;
+                font-weight: bold !important;
+                font-size: 20px !important;
+                line-height: 24px !important;
                 color: $secondary;
                 display: block;
                 width: 270px;
@@ -55,13 +53,24 @@
             &Link {
                 display: block;
                 margin-top: 39px;
-                font-family: Archivo;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 18px;
                 line-height: 17px;
                 color: $black;
                 text-decoration: none;
+            }
+        }
+        &--right {
+            &Title {
+                font-weight: bold;
+                font-size: 16px !important;
+                line-height: 17px !important;
+                color: $black;
+                margin-bottom: 6px !important;
+                &Last {
+                    margin-top: 32px !important;
+                }
             }
         }
     }
