@@ -156,3 +156,19 @@ button.close-nav-toggle:focus {
         }
     }
 }
+
+// Remove category header
+
+.entry-header {
+    .post-meta-wrapper .post-author,
+    .post-meta-wrapper .post-comment-link,
+    .entry-categories {
+        display: none;
+    }
+    .post-meta-wrapper {
+        .post-date {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
