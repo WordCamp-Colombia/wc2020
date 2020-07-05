@@ -13,6 +13,9 @@
     &.flex-row {
         flex-direction: row;
         -webkit-flex-direction: row;
+        @include mobile {
+            flex-direction: column;
+        }
     }
 
     &.wrap {

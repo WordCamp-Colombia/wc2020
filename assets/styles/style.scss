@@ -15,6 +15,7 @@
 @import "mixins/rem";
 @import "mixins/tab-focus";
 @import "mixins/opacity";
+@import "mixins/viewport";
 
 //core styles
 @import "core/base";
@@ -23,6 +24,7 @@
 @import "modules/header";
 @import "modules/layout";
 @import "modules/buttons";
+@import "modules/cards";
 @import "modules/informationMain";
 @import "modules/postmain";
 @import "modules/footer";
