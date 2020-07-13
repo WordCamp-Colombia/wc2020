@@ -1,5 +1,5 @@
 .flex-box {
-    margin: 0 1rem 1rem 0;
+    margin: 0 1rem 0 0;
 }
 .flex-grid {
     display: flex;
@@ -147,6 +147,13 @@
 
 .offset-8of12 {
     margin-left: 75%;
+}
+
+.offset-content {
+    margin-left: 18%;
+    @include mobile {
+        margin-left auto;
+    }
 }
 
 .float-left {
