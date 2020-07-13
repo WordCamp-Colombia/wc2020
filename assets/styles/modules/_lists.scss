@@ -7,12 +7,14 @@
         margin-bottom: 0.3rem;
         margin-top: 0;
         a {
-            font-weight: 600;
             text-decoration: none;
             color: black;
             &:hover {
                 color: $blue;
             }
         }
+    }
+    &--bold {
+        font-weight: 600;
     }
 }

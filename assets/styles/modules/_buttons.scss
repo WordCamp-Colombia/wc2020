@@ -18,3 +18,17 @@
         margin-bottom: 10px;
     }
 }
+
+.button--secondary {
+    background-color: $white;
+    color: $black;
+    padding: .75rem 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid $black;
+    &:hover {
+        background-color: $primary;
+        border-color: $contrast;
+    }
+}

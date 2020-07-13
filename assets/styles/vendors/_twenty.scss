@@ -382,7 +382,7 @@ a:focus {
 
 ul,
 ol {
-    margin: 0 0 3rem 3rem;
+    margin: 0 0 1rem 1rem;
 }
 
 ul {
@@ -2338,7 +2338,7 @@ h2.entry-title {
     color: $secondary;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
     list-style: none;
     margin: -1rem 0 0 -2rem;
@@ -2353,6 +2353,7 @@ h2.entry-title {
 
 .post-meta a {
     color: inherit;
+    font-size: inherit;
     text-decoration: none;
 }
 
@@ -5064,20 +5065,20 @@ a.to-the-top > * {
     /* Widgets ------------------------------- */
 
     .widget .widget-title {
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
 
     /* Site Footer --------------------------- */
 
     .footer-top-visible .footer-nav-widgets-wrapper,
     .footer-top-hidden #site-footer {
-        margin-top: 8rem;
+        margin-top: 1rem;
     }
 
     /* FOOTER TOP */
 
     .footer-top {
-        padding: 3.7rem 0;
+        padding: 1rem 0;
     }
 
     .footer-menu {
@@ -5109,13 +5110,17 @@ a.to-the-top > * {
         width: 50%;
     }
 
+    .footer-widgets a {
+        color: inherit;
+    }
+
     .footer-widgets + .footer-widgets {
         margin-top: 0;
     }
 
     .footer-widgets .widget {
         border-top: none;
-        margin-top: 5rem;
+        margin-top: 1rem;
         padding-top: 0;
     }
 

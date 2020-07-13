@@ -1,5 +1,4 @@
-// Helpers
-
+// Margins
 .mb-0 {
     margin-bottom: 0 !important;
 }
@@ -16,7 +15,120 @@
     margin-right: 0 !important;
 }
 
+.mt-1 {
+    margin-top: ($spacer * .25) !important;
+}
+
+.mr-1 {
+    margin-right: ($spacer * .25) !important;
+}
+
+.mb-1 {
+    margin-bottom: ($spacer * .25) !important;
+}
+
+.ml-1 {
+    margin-left: ($spacer * .25) !important;
+}
+
+.mt-2 {
+    margin-top: ($spacer * .5) !important;
+}
+
+.mr-2 {
+    margin-right: ($spacer * .5) !important;
+}
+
+.mb-2 {
+    margin-bottom: ($spacer * .5) !important;
+}
+
+.ml-2 {
+    margin-left: ($spacer * .5) !important;
+}
+
+.mt-3 {
+    margin-top: $spacer !important;
+}
+
+.mr-3 {
+    margin-right: $spacer !important;
+}
+
+.mb-3 {
+    margin-bottom: $spacer !important;
+}
+
+.ml-3 {
+    margin-left: $spacer !important;
+}
+
+// Paddings
+.pt-3 {
+    margin-top: $spacer !important;
+}
+.pr-3 {
+    margin-right: $spacer !important;
+}
+.pb-3 {
+    margin-bottom: $spacer !important;
+}
+.pl-3 {
+    margin-left: $spacer !important;
+}
+
+.pt-4 {
+    margin-top: ($spacer * 1.5) !important;
+}
+
+.pr-4 {
+    margin-right: ($spacer * 1.5) !important;
+}
+
+.pb-4 {
+    margin-bottom: ($spacer * 1.5) !important;
+}
+
+.pl-4 {
+    margin-left: ($spacer * 1.5) !important;
+}
+
+.pt-5 {
+    margin-top: ($spacer * 3) !important;
+}
+
+.pr-5 {
+    margin-right: ($spacer * 3) !important;
+}
+
+.pb-5 {
+    margin-bottom: ($spacer * 3) !important;
+}
+
+.pl-5 {
+    margin-left: ($spacer * 3) !important;
+}
+
+
+// Text
+.text-bold {
+    font-weight: bold;
+}
+
+// Links
+.link-base {
+    color: $black;
+    &:hover {
+        color: $blue;
+    }
+}
+
+// Titles
 .title {
+    &--primary {
+        font-family: $font-family-secondary;
+        font-weight: 800;
+    }
     &--section {
         font-family: $font-family-secondary;
         font-size: to-rem(62px);
@@ -36,6 +148,8 @@
     }
 }
 
+
+// Backgrounds
 .bg-primary {
     background-color: $primary;
 }
@@ -46,4 +160,26 @@
 
 .bg-contrast {
     background-color: $contrast;
+}
+
+.bg-text {
+    position: relative;
+    &:before {
+        background-repeat: no-repeat;
+        overflow: visible;
+        content: '';
+        display: inline-block;
+        width: 256px;
+        height: 247px;
+        position: absolute;
+        right: 0;
+        top: -125px;
+        z-index: 0;
+        &--blue {
+            background-image: url(https://2020.colombia.wordcamp.org/files/2020/07/bg-letters-blue.png);
+        }
+        &--red {
+            background-image: url(https://2020.colombia.wordcamp.org/files/2020/07/bg-letters-red.png);
+        }
+    }
 }
