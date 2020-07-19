@@ -6,10 +6,17 @@
   padding-bottom: to-rem(18);
   padding-top: to-rem(14);
   @extend %container;
+  @media #{$medium-up} {
+    padding-bottom: to-rem(10);
+    padding-top: to-rem(6);
+  }
 }
 .custom-logo {
-	max-width: to-rem(281);
-	height: auto;
+	max-width: to-rem(140);
+  height: auto;
+  @media #{$medium-up} {
+    max-width: to-rem(281);
+  }
 }
 .top-bar {
 	background-color: $brand;

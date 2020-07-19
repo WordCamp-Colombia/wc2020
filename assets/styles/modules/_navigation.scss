@@ -1,6 +1,3 @@
-.menu-main-menu-container {
-
-}
 .menu {
   padding: 0;
   list-style: none;
@@ -15,9 +12,18 @@
 }
 .menu-toggle {
   display: inline-block;
+  padding: to-rem(5) to-rem(10);
+  background: transparent url('https://www.wpbq.org/wcco/hamburger.svg') no-repeat center;
+  background-size: to-rem(26) to-rem(17);
+  text-indent: -999em;
+  border: none;
   @media #{$medium-up} {
     display: none;
   }
+}
+.toggled-on .menu-toggle {
+  background: transparent url('https://www.wpbq.org/wcco/cross.svg') no-repeat center;
+  background-size: 18px 18px;
 }
 .current-menu-item {
   a::after {
@@ -29,14 +35,31 @@
   }
 }
 .button--box {
-  background-color: #FFF56C;
-  border: solid 1px #000000;
-  box-shadow: 1px 0px 0px #000000, 0px -1px 0px #000000, 2px -1px 0px #000000, 1px -2px 0px #000000, 3px -2px 0px #000000, 2px -3px 0px #000000, 4px -3px 0px #000000, 3px -4px 0px #000000, 5px -4px 0px #000000, 4px -5px 0px #000000, 6px -5px 0px #000000, 5px -6px 0px #000000, 7px -6px 0px #000000, 6px -7px 0px #000000, 8px -7px 0px #000000, 7px -8px 0px #000000, 9px -8px 0px #000000, 8px -8px 0px #000000;
-  font-size: to-rem(14);
-  letter-spacing: to-rem(0.1);
-  font-family: 'Archivo Black';
-  padding: to-rem(6) to-rem(16);
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: margin-bottom 0.3s ease, margin-left 0.3s ease, box-shadow 0.3s ease;
+  @media #{$medium-up} {
+    background-color: #FFF56C;
+    border: solid 1px #000000;
+    box-shadow: 1px 0px 0px #000000, 0px -1px 0px #000000, 2px -1px 0px #000000, 1px -2px 0px #000000, 3px -2px 0px #000000, 2px -3px 0px #000000, 4px -3px 0px #000000, 3px -4px 0px #000000, 5px -4px 0px #000000, 4px -5px 0px #000000, 6px -5px 0px #000000, 5px -6px 0px #000000, 7px -6px 0px #000000, 6px -7px 0px #000000, 8px -7px 0px #000000, 7px -8px 0px #000000, 9px -8px 0px #000000, 8px -8px 0px #000000;
+    font-size: to-rem(14);
+    letter-spacing: to-rem(0.1);
+    font-family: 'Archivo Black';
+    padding: to-rem(6) to-rem(16);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: margin-bottom 0.3s ease, margin-left 0.3s ease, box-shadow 0.3s ease;
+  }
+}
+
+.main-navigation {
+  // background-color: rgba(0, 0, 0, 0.9);
+  // bottom: 0;
+  // left: 0;
+  // position: fixed;
+  // right: 0;
+  // top: 0;
+  // z-index: 99999;
+  .menu-main-menu-container {
+    @media #{$small-max} {
+      display: none;
+    }
+  }
 }
