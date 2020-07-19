@@ -1,5 +1,7 @@
 .main-banner {
-  background: #0F100E;
+  background: url("https://2020.colombia.wordcamp.org/files/2020/07/main-banner-bg@2x.png") #0F100E;
+  background-size: contain;
+  background-position: top left;
   overflow: hidden;
   @media #{$medium-up} {
     padding-top: to-rem(123);
