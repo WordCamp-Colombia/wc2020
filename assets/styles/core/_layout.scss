@@ -1,0 +1,10 @@
+$class-type: if($use-silent-classes, unquote("%"), unquote("."));
+#{$class-type}container{
+  @include rem(1190, 'max-width');
+  margin: 0 auto;
+  position: relative;
+  padding: 0 $half-spacing-unit;
+  @media #{$small-up} {
+  	padding: 0 $half-spacing-unit - 10;
+  }
+}

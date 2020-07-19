@@ -1,0 +1,101 @@
+$class-type: if($use-silent-classes, unquote("%"), unquote("."));
+
+#{$class-type}flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#{$class-type}grid {
+  @include rem(25, 'column-gap');
+  @include rem(40, 'row-gap');
+  display: grid;
+  @media #{$small-up} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media #{$medium-up} {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+#{$class-type}vertical-align--middle {
+  vertical-align: middle;
+}
+
+#{$class-type}vertical-align--bottom {
+  vertical-align: bottom;
+}
+
+#{$class-type}vertical-align--top {
+  vertical-align: top;
+}
+
+#{$class-type}align-items {
+  align-items: center;
+}
+
+#{$class-type}align--start {
+  align-self: flex-start;
+}
+#{$class-type}align--end {
+  align-self: flex-end;
+}
+#{$class-type}horizontal-align--center {
+  justify-content: center;
+}
+#{$class-type}justify-content--left {
+  justify-content: flex-start;
+}
+
+#{$class-type}justify-content--right {
+  justify-content: flex-end;
+}
+// width helpers
+#{$class-type}full-width {
+  width: 100%;
+}
+
+#{$class-type}full-width--small-only {
+  @media #{$medium-max}{
+    width: 100%;
+  }
+}
+
+// Mute an object by reducing its opacity.
+//===================
+
+#{$class-type}muted{
+  @include opacity(0.5);
+}
+
+#{$class-type}overflow-x {
+  overflow-x: auto;
+}
+
+#{$class-type}overflow-x--hidden {
+  overflow-x: hidden;
+}
+
+#{$class-type}relative{
+  position: relative;
+}
+
+#{$class-type}margin-auto {
+  margin: auto;
+}
+
+// Text Helpers
+//===================
+
+// Text alignment
+#{$class-type}text-start {
+  text-align: $start;
+}
+
+#{$class-type}text-end {
+  text-align: $end;
+}
+
+#{$class-type}text-center {
+  text-align: center;
+}

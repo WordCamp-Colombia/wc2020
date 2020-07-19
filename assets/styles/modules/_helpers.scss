@@ -1,0 +1,7 @@
+// Extend your silent classes
+.sr-only {
+  @extend %sr-only;
+}
+.hidden {
+  @extend %hidden;
+}

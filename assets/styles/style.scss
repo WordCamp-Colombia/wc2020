@@ -1,4 +1,5 @@
 //layuot files
+
 //settings and colors
 @import "settings/colors";
 @import "settings/variables";
@@ -6,29 +7,34 @@
 
 //Vendors
 @import "vendors/normalize";
-@import "vendors/twenty";
 
 //mixins
+@import "mixins/buttons";
 @import "mixins/box-sizing";
 @import "mixins/clearfix";
 @import "mixins/em";
 @import "mixins/rem";
+@import "mixins/flexgrid";
+@import "mixins/visibility";
 @import "mixins/tab-focus";
 @import "mixins/opacity";
-@import "mixins/viewport";
 
 //core styles
-@import "core/base";
+@import "core/core";
+@import "core/fonts";
+@import "core/typography";
+@import "core/layout";
+@import "core/flexgrid";
 
 //modules, the real css that you write everyday based on the design
-@import "modules/header";
-// @import "modules/layout";
-// @import "modules/buttons";
-// @import "modules/cards";
-// @import "modules/lists";
-// @import "modules/informationMain";
-// @import "modules/postmain";
-// @import "modules/footer";
+@import "modules/layout";
+@import "modules/flexgrid";
 
 // Helpers
-@import "helpers/helpers";
+@import "helpers/font-helpers";
+@import "helpers/space-helpers";
+@import "helpers/spacing-helpers";
+@import "helpers/visibility-helpers";
+
+// Extended Helpers
+@import "modules/helpers";

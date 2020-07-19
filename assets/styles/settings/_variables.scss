@@ -1,16 +1,63 @@
 $start: left;
 $end: right;
 
-//Typography
-$font-family-sans-serif: "Archivo", sans-serif, "Arial", Gadget !default;
-$font-family-secondary: "Archivo Black", sans-serif, "Arial", Gadget !default;
-$font-family-base: $font-family-sans-serif;
+ //Typography
+$font-family-sans-serif:            'Archivo', sans-serif, "Helvetica Neue", Helvetica, Arial, "Lucida Grande" !default;
+$font-family-base:                  $font-family-sans-serif;
 
-$golden-ratio: 1.618;
-$font-size-base: 18px;
-$font-weight-base: 400;
+$golden-ratio:                      1.875;
+$font-size-base:                    16px;
+$font-weight-base:                  400;
 
-$line-height-base: 24px;
-$line-height-computed: floor($font-size-base * $line-height-base);
+$line-height-base:                  $golden-ratio;
 
-$spacer: 1rem;
+$line-height-base:                  $golden-ratio;
+$line-height-computed:              floor($font-size-base * $line-height-base);
+
+$base-spacing-unit:                 $line-height-computed;
+$half-spacing-unit:                 $line-height-computed / 2;
+
+$headings-font-family:              $font-family-base;
+$headings-font-weight:              bold;
+$headings-line-height:              1.1;
+$headings-letter-spacing:           0;
+$headings-color:                    inherit;
+
+// Grid
+$use-silent-classes:  true!default;
+$grid-columns: 12 !default; // Set number of columns in the grid
+
+$xs-max: 40rem !default; // Set xs breakpoint's max width
+$sm-max: 64rem !default; // Set sm breakpoint's max width
+$md-max: 90rem !default; // Set md breakpoint's max width
+$lg-max: 120rem !default; // Set lg breakpoint's max width
+$bg-max: 160rem !default; // Set big breakpoint's max width
+
+$gutter: 0.625rem !default; // Set gutter size
+
+$sm-start: ($xs-max + 1); // Generate sm breakpoint's min width
+$md-start: ($sm-max + 1); // Generate md breakpoint's min width
+$lg-start: ($md-max + 1); // Generate lg breakpoint's min width
+$xl-start: ($lg-max + 1); // Generate xl breakpoint's min width
+$bg-start: ($bg-max + 1); // Generate xl breakpoint's min width
+
+// Breakpoints
+// Create breakpoint range statements to be used in media queries
+$xsmall-only: "only screen and (max-width: #{$xs-max})"; // 0 -> xs-max range
+$extra-small-max: "only screen and (max-width: #{$xs-max - 1})";
+$small-up: "only screen and (min-width: #{$sm-start})"; // sm-start -> up range
+$small-max: "only screen and (max-width: #{$sm-max - 1})";
+$small-only: "only screen and (min-width: #{$sm-start}) and (max-width: #{$sm-max})"; // sm-start -> sm-max range
+$medium-up: "only screen and (min-width: #{$md-start})"; // md-start -> up range
+$medium-only: "only screen and (min-width: #{$md-start}) and (max-width: #{$md-max})"; // md-start -> md-max range
+$medium-max: "only screen and (max-width: #{$md-max - 1})";
+$large-up: "only screen and (min-width: #{$lg-start})"; // lg-start -> up range
+$large-only: "only screen and (min-width: #{$lg-start}) and (max-width: #{$lg-max})"; // lg-start -> lg-max range
+$xlarge-up: "only screen and (min-width: #{$xl-start})"; // xl-start -> up range
+$big-up: "only screen and (min-width: #{$bg-start})"; // lg-start -> up range
+$big-only: "only screen and (min-width: #{$xl-start}) and (max-width: #{$bg-max})"; // lg-start -> lg-max range
+
+$breakpoints-all: ($xsmall-only, $small-up, $small-max, $small-only, $medium-up, $medium-only, $large-up, $large-only, $xlarge-up);
+$breakpoint-ups: ($small-up, $medium-up, $large-up, $xlarge-up);
+$breakpoint-all-prefixes: ("xsmall", "xsmall-only", "small", "small-max", "small-only", "medium", "medium-only", "large", "large-only", "xlarge");
+$breakpoint-up-prefixes: ("xsmall", "small", "medium", "large", "xlarge");

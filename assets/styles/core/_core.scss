@@ -1,0 +1,72 @@
+$class-type: if($use-silent-classes, unquote("%"), unquote("."));
+* {
+  @include box-sizing(border-box);
+  &:before,
+  &:after {
+    @include box-sizing(border-box);
+  }
+}
+
+// Body reset
+
+#{$class-type}html {
+  font-size: em($font-size-base, 16);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+}
+
+#{$class-type}body {
+  background-size: 100%;
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $color-text-body;
+  background-color: $body-bg;
+  overflow-x: hidden;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+// Links
+
+#{$class-type}a {
+  color: $link-color;
+  text-decoration: none;
+  transition: all .2s ease;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+
+  &:focus {
+    @include tab-focus();
+  }
+}
+
+#{$class-type}figure {
+  margin: 0;
+}
+
+#{$class-type}img {
+  max-width: 100%;
+}
+
+// Horizontal rules
+
+#{$class-type}hr {
+  margin-top:    $line-height-computed;
+  margin-bottom: $line-height-computed;
+  border: 0;
+  border-top: 1px solid $gray;
+}

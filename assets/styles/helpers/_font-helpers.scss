@@ -1,0 +1,50 @@
+$class-type: if($use-silent-classes, unquote("%"), unquote("."));
+
+// Font Helpers
+//===================
+
+// Font weights
+#{$class-type}weight--light        { font-weight: 300; }
+
+#{$class-type}face-regular,
+#{$class-type}regular,
+#{$class-type}weight--normal       { font-weight: 400; }
+
+#{$class-type}face-semi,
+#{$class-type}semibold,
+#{$class-type}weight--semibold     { font-weight: 600; }
+
+#{$class-type}face-bold,
+#{$class-type}bold,
+#{$class-type}weight--bold         { font-weight: 700; }
+
+// Font styles
+#{$class-type}style--normal        { font-style: normal; }
+
+#{$class-type}border--none         { border: 0; }
+
+// refactor // was inside from transparency core helpers
+#{$class-type}word-break {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+#{$class-type}uppercase {
+  text-transform: uppercase;
+}
+
+#{$class-type}lowercase {
+  text-transform: lowercase;
+}
+
+#{$class-type}capitalize {
+  text-transform: capitalize;
+}
+
+#{$class-type}underline {
+  text-decoration: underline;
+}
+
+#{$class-type}underline--none {
+  text-decoration: none !important;
+}

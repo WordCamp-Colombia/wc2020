@@ -1,0 +1,55 @@
+$class-type: if($use-silent-classes, unquote("%"), unquote("."));
+
+// Headings
+// -------------------------
+
+$font-size-huge: $font-size-base * 3.65;
+$font-size-alpha: $font-size-base * 3;
+$font-size-beta: $font-size-base * 1.5714;
+$font-size-gamma: $font-size-base * 1.5714;
+$font-size-delta: $font-size-base * 1.5714;
+$font-size-epsilon: $font-size-base * 1.5714;
+$font-size-zeta: $font-size-base * 1.5714;
+
+#{$class-type}huge {
+  font-size: $font-size-huge;
+}
+
+#{$class-type}h1, #{$class-type}alpha {
+  font-size: $font-size-alpha;
+  letter-spacing: 0;
+}
+
+#{$class-type}h2, #{$class-type}beta {
+  font-size: $font-size-beta;
+  letter-spacing: 0;
+  @include rem(30, 'line-height');
+}
+
+#{$class-type}h3, #{$class-type}gamma {
+  font-size: $font-size-gamma;
+  letter-spacing: 0;
+  @include rem(30, 'line-height');
+}
+
+#{$class-type}h4, #{$class-type}delta {
+  font-size: $font-size-delta;
+  letter-spacing: 0;
+  @include rem(30, 'line-height');
+}
+
+#{$class-type}h5, #{$class-type}epsilon {
+  font-size: $font-size-epsilon;
+  letter-spacing: 0;
+  @include rem(30, 'line-height');
+}
+
+#{$class-type}h6, #{$class-type}zeta {
+  font-size: $font-size-zeta;
+  letter-spacing: 0;
+  @include rem(30, 'line-height');
+}
+
+#{$class-type}small, #{$class-type}small {
+  font-size: 80%;
+}
