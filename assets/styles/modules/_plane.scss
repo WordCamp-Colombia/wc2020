@@ -1,5 +1,5 @@
-$side: 50px;
-$l: 400px;
+$side: 26px;
+$l: 500px;
 
 @mixin plane($w, $h) {
   width: $w;
@@ -21,7 +21,6 @@ $l: 400px;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   margin: auto;
 }
 
@@ -52,12 +51,12 @@ $l: 400px;
         content: '';
         display: block;
         @include center;
-        width: 10%;
-        height: 10%;
+        width: 13%;
+        height: 13%;
         border-radius: 100%;
         background: #353220;
         box-sizing: border-box;
-        box-shadow: 0 0 60px 2px #353220;
+        box-shadow: 0 0 60px 2px #5c5843;
       }
       &::before {
         transform: translateZ(-$l);

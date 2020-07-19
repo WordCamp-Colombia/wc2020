@@ -7,8 +7,10 @@
     padding-top: to-rem(123);
     padding-bottom: to-rem(35);
   }
-  &__right {
+  &__right,
+  &__left {
     position: relative;
+    height: 100%;
   }
   &__title {
     font-family: 'Archivo Black';
@@ -67,6 +69,31 @@
       top: to-rem(82);
     }
   }
+  .asteroid__image {
+    position: absolute;
+    right: to-rem(-150);
+    top: to-rem(-60);
+    z-index: 2;
+    @media #{$small-max} {
+      display: none;
+    }
+  }
+  .luna__image {
+    bottom: to-rem(30);
+    left: to-rem(40);
+    position: absolute;
+    z-index: 2;
+    @media #{$small-max} {
+      display: none;
+    }
+  }
+  .rock__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    animation: float-zoom 100s infinite;
+    -webkit-animation: float-zoom 100s infinite; /* Chrome, Safari, Opera */
+  }
   .astronaut {
     position: absolute;
     left: to-rem(43);
@@ -95,6 +122,22 @@
     }
     50% {
       transform:translate(50px,50px);
+    }
+  }
+  @keyframes float-zoom {
+    0%, 100% {
+      transform:translate(20px,25px) scale(0.1) rotate(0);
+    }
+    50% {
+      transform:translate(0,0) scale(0.9) rotate(360deg);
+    }
+  }
+  @-webkit-keyframes float-zoom {
+    0%, 100% {
+      transform:translate(20px,25px) scale(0.1) rotate(0);
+    }
+    50% {
+      transform:translate(0,0) scale(0.9) rotate(360deg);
     }
   }
 }
