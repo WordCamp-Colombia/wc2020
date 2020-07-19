@@ -31,7 +31,7 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 #{$class-type}flexgrid--full {
   margin-left:0;
 
-  > #{$class-type}flexgrid__item {
+  > .flexgrid__item {
     padding-left:0;
   }
 }

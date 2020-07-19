@@ -2,3 +2,22 @@
 .flexgrid {
   @extend %flexgrid;
 }
+
+.flexgrid--full {
+  @extend %flexgrid--full;
+}
+
+.xsmall--col-12 {
+  @extend %xsmall--col-12;
+}
+
+.small--col-12 {
+  @extend %small--col-12;
+}
+
+.medium--col-5 {
+  @extend %medium--col-5;
+}
+.medium--col-7 {
+  @extend %medium--col-7;
+}
