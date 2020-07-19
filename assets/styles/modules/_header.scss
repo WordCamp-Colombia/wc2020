@@ -1,5 +1,11 @@
 .site-header {
-    @extend %container;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: to-rem(33);
+  padding-bottom: to-rem(18);
+  padding-top: to-rem(14);
+  @extend %container;
 }
 .custom-logo {
 	max-width: to-rem(281);
@@ -10,7 +16,7 @@
 	font-size: 0;
 	left: 0;
 	padding: to-rem(10) 0;
-	position: fixed;
+	position: absolute;
 	right: 0;
 	text-align: center;
 	top: 0;

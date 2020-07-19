@@ -1,0 +1,44 @@
+.menu-main-menu-container {
+
+}
+.menu {
+  padding: 0;
+  list-style: none;
+  &-item {
+    font-family: 'Archivo Black';
+    font-size: 18px;
+    color: #0F100E;
+    letter-spacing: -0.01px;
+    display: inline-block;
+    margin-left: to-rem(30);
+  }
+}
+.menu-toggle {
+  display: inline-block;
+  @media #{$medium-up} {
+    display: none;
+  }
+}
+.current-menu-item {
+  a::after {
+    content: "";
+    height: to-rem(3);
+    background-color: $brand;
+    width: 100%;
+    display: block;
+  }
+}
+.button--box {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxMXB4IiBoZWlnaHQ9IjExcHgiIHZpZXdCb3g9IjAgMCAxMSAxMSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgPHRpdGxlPmRpYWdvbmFsLWFycm93PC90aXRsZT4gICAgPGcgaWQ9IkxhbmRpbmctMjAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9IkhvbWUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00NDguMDAwMDAwLCAtMTU3NS4wMDAwMDApIiBmaWxsPSIjMDAwMDAwIiBmaWxsLXJ1bGU9Im5vbnplcm8iPiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0xNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjMzLjAwMDAwMCwgMTU1OS4wMDAwMDApIj4gICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLjAwMDAwMCwgNS4wMDAwMDApIj4gICAgICAgICAgICAgICAgICAgIDxnIGlkPSJkaWFnb25hbC1hcnJvdyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE0LjAwMDAwMCwgMTEuMDAwMDAwKSI+ICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTkuMzUyNjQsMCBMMi43OTkwNCwwIEwyLjc5OTA0LDIuMTg0NjQgTDYuNzE1Nzc2LDIuMTg0NjQgTDAuMDA4NjQsOC44OTE0NTYgTDEuNTUzMDI0LDEwLjQzNjQ4IEw4LjI2MDE2LDMuNzI5MDI0IEw4LjI2MTQ0LDcuNjQ1NzYgTDEwLjQ0NDgsNy42NDU3NiBMMTAuNDQ0OCwxLjA5MjE2IEMxMC40NDQ4LDAuNDkwODggOS45NTUyNjQsMCA5LjM1MjY0LDAgWiIgaWQ9IlBhdGgiPjwvcGF0aD4gICAgICAgICAgICAgICAgICAgIDwvZz4gICAgICAgICAgICAgICAgPC9nPiAgICAgICAgICAgIDwvZz4gICAgICAgIDwvZz4gICAgPC9nPjwvc3ZnPg==) #FFF56C;
+  background-position: 91% 50%;
+  background-repeat: no-repeat;
+  border: solid 1px #000000;
+  box-shadow: 1px 0px 0px #000000, 0px -1px 0px #000000, 2px -1px 0px #000000, 1px -2px 0px #000000, 3px -2px 0px #000000, 2px -3px 0px #000000, 4px -3px 0px #000000, 3px -4px 0px #000000, 5px -4px 0px #000000, 4px -5px 0px #000000, 6px -5px 0px #000000, 5px -6px 0px #000000, 7px -6px 0px #000000, 6px -7px 0px #000000, 8px -7px 0px #000000, 7px -8px 0px #000000, 9px -8px 0px #000000, 8px -8px 0px #000000;
+  font-size: to-rem(14);
+  letter-spacing: to-rem(0.1);
+  font-family: 'Archivo Black';
+  padding: to-rem(6) to-rem(36) to-rem(6) to-rem(16);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: margin-bottom 0.3s ease, margin-left 0.3s ease, box-shadow 0.3s ease;
+}
