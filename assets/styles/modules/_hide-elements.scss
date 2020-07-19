@@ -2,3 +2,7 @@
 .entry-footer {
     display: none;
 }
+.site-title,
+.site-description {
+    @extend %sr-only;
+}

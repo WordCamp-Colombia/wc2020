@@ -1,0 +1,7 @@
+.site-header {
+    @extend %container;
+}
+.custom-logo {
+	max-width: to-rem(281);
+	height: auto;
+}
