@@ -6,36 +6,12 @@
     padding-top: to-rem(60);
     padding-bottom: 0;
   }
-  &__title {
-    font-family: 'Archivo Black';
-    font-size: to-rem(36);
-    line-height: 1;
-    margin-bottom: to-rem(15);
-    margin-top: 0;
-    text-align: center;
-    @media #{$medium-up} {
-      font-size: to-rem(56);
-    }
-  }
-  &__subtitle {
-    color: $gray;
-    font-size: to-rem(20);
-    font-weight: 600;
-    line-height: 1;
-    margin-bottom: to-rem(26);
-    margin-top: 0;
-    text-align: center;
-    @media #{$medium-up} {
-      font-size: to-rem(32);
-      margin-bottom: to-rem(56);
-    }
-  }
   .reserva__wrapper {
     padding-top: to-rem(20);
     text-align: center;
     z-index: 1;
     @media #{$medium-up} {
-      bottom: -20px;
+      bottom: to-rem(10);
       padding-top: 0;
       position: relative;
     }
@@ -56,7 +32,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0 to-rem(35);
     position: relative;
-    bottom: to-rem(-51);
+    bottom: to-rem(-20);
     margin-top: to-rem(-51);
   }
   .box {
@@ -106,7 +82,7 @@
 }
 .earth {
   &__container {
-    bottom: to-rem(-25);
+    bottom: to-rem(-1);
     position: absolute;
     width: 100%;
     @media #{$small-max} {

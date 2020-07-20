@@ -1,0 +1,9 @@
+.alistate {
+  background-color: $brand;
+  padding-top: to-rem(30);
+  padding-bottom: to-rem(30);
+  position: relative;
+  @media #{$medium-up} {
+    padding-top: to-rem(60);
+  }
+}

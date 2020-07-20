@@ -26,3 +26,30 @@ hr {
 .container {
   @extend %container;
 }
+
+.section {
+  &__title {
+    font-family: 'Archivo Black';
+    font-size: to-rem(36);
+    line-height: 1;
+    margin-bottom: to-rem(15);
+    margin-top: 0;
+    text-align: center;
+    @media #{$medium-up} {
+      font-size: to-rem(56);
+    }
+  }
+  &__subtitle {
+    color: $gray;
+    font-size: to-rem(20);
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: to-rem(26);
+    margin-top: 0;
+    text-align: center;
+    @media #{$medium-up} {
+      font-size: to-rem(32);
+      margin-bottom: to-rem(56);
+    }
+  }
+}

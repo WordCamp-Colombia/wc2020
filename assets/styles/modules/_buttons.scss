@@ -29,5 +29,8 @@
       vertical-align: middle;
       width: to-rem(27);
     }
+    &--pink {
+      background-color: $secondary-brand;
+    }
   }
 }

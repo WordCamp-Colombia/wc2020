@@ -1,0 +1,14 @@
+.lanzate {
+  padding-top: to-rem(30);
+  padding-bottom: to-rem(30);
+  position: relative;
+  @media #{$medium-up} {
+    padding-top: to-rem(60);
+  }
+  &__content {
+    font-size: to-rem(30);
+    font-weight: 600;
+    text-align: center;
+    line-height: to-rem(35);
+  }
+}
