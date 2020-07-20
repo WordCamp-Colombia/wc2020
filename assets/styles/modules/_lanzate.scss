@@ -6,9 +6,32 @@
     padding-top: to-rem(60);
   }
   &__content {
-    font-size: to-rem(30);
-    font-weight: 600;
+    font-size: to-rem(16);
+    font-weight: 400;
     text-align: center;
-    line-height: to-rem(35);
+    line-height: to-rem(20);
+    @media #{$medium-up} {
+      font-size: to-rem(30);
+      font-weight: 600;
+      line-height: to-rem(35);
+      margin-bottom: to-rem(60);
+    }
+  }
+}
+.comunidades {
+  column-gap: to-rem(20);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  row-gap: to-rem(20);
+  align-items: center;
+  @media #{$medium-up} {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+.comunidad {
+  &__image {
+    display: block;
+    margin: auto;
   }
 }
