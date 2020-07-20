@@ -18,7 +18,6 @@
       padding-bottom: to-rem(40);
       @media #{$medium-up} {
         padding-top: to-rem(60);
-        padding-bottom: to-rem(80);
       }
     }
   }
@@ -28,6 +27,14 @@
     @media #{$medium-up} {
       height: to-rem(436);
       width: auto;
+    }
+  }
+  .comments-area {
+    @extend .container;
+    max-width: to-rem(800);
+    padding-bottom: to-rem(40);
+    @media #{$medium-up} {
+      padding-bottom: to-rem(80);
     }
   }
 }

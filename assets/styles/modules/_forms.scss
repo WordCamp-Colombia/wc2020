@@ -1,0 +1,139 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+button.wp-block-button__link {
+	-webkit-font-smoothing: antialiased;
+	background-color: $white;
+	transition: all .1s ease-in-out;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: all .1s ease-in-out;
+  border-radius: 0;
+  border: to-rem(2) solid $black;
+  cursor: pointer;
+  color: #000;
+  display: inline-block;
+  font-family: 'Archivo Black';
+  font-size: to-rem(18.71);
+  letter-spacing: to-rem(0.14);
+  line-height: 1;
+  padding: to-rem(9) to-rem(24);
+  text-transform: uppercase;
+  @media #{$medium-up} {
+    margin-right: to-rem(23);
+  }
+}
+
+button:hover, button:active, button:focus, button.wp-block-button__link:hover, button.wp-block-button__link:active, button.wp-block-button__link:focus,
+  input[type="button"]:hover,
+  input[type="button"]:active,
+  input[type="button"]:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:active,
+  input[type="reset"]:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:active,
+  input[type="submit"]:focus {
+	color: #000;
+	background-color: $secondary-brand;
+}
+
+button:focus, button.wp-block-button__link:focus,
+  input[type="button"]:focus,
+  input[type="reset"]:focus,
+  input[type="submit"]:focus {
+	outline: 2px dotted $secondary-brand;
+	outline-offset: 2px;
+}
+
+button:active, button.wp-block-button__link:active,
+  input[type="button"]:active,
+  input[type="reset"]:active,
+  input[type="submit"]:active {
+	-webkit-transform: translateY(1px);
+	transform: translateY(1px);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #303030;
+	border: 1px solid #303030;
+	border-radius: 6px;
+	padding: 13px 20px;
+}
+
+input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  input[type="number"]:focus,
+  input[type="tel"]:focus,
+  input[type="range"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="week"]:focus,
+  input[type="time"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="color"]:focus,
+  textarea:focus {
+	outline: 2px dotted $secondary-brand;
+	outline-offset: 2px;
+}
+
+textarea {
+	width: 100%;
+}
+
+select {
+	background-color: #fff;
+	border: 1px solid #303030;
+	height: 40px;
+}
+
+select:focus {
+	outline: 2px dotted $secondary-brand;
+	outline-offset: 2px;
+}
+
+.contact-form.contact-form input[type="email"],
+.contact-form.contact-form input[type="text"],
+.contact-form.contact-form input[type="url"],
+.contact-form.contact-form textarea {
+	width: 100%;
+	max-width: 100%;
+}
+
+.contact-form.contact-form select {
+	min-width: 80px;
+}
+
+.contact-form.contact-form select,
+.contact-form.contact-form input[type="email"],
+.contact-form.contact-form input[type="text"],
+.contact-form.contact-form input[type="url"],
+.contact-form.contact-form textarea {
+	margin-bottom: 30px;
+}
+
+.contact-form.contact-form label span {
+	color: #747466;
+}

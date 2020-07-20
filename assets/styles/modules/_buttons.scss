@@ -15,6 +15,7 @@
     line-height: 1;
     padding: to-rem(9) to-rem(24);
     text-transform: uppercase;
+    cursor: pointer;
     @media #{$medium-up} {
       margin-right: to-rem(23);
     }
