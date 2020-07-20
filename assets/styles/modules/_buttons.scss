@@ -13,9 +13,11 @@
     font-size: to-rem(18.71);
     letter-spacing: to-rem(0.14);
     line-height: 1;
-    margin-right: to-rem(23);
     padding: to-rem(9) to-rem(24);
     text-transform: uppercase;
+    @media #{$medium-up} {
+      margin-right: to-rem(23);
+    }
     &::after {
       content: "";
       background-image: url("https://2020.colombia.wordcamp.org/files/2020/07/arrow-circle@2x.png");

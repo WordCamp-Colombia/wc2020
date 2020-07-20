@@ -40,9 +40,9 @@
     }
   }
   .reserva__cta {
-    float: right;
     margin-bottom: to-rem(20);
     @media #{$medium-up} {
+      float: right;
       margin-bottom: 0;
     }
   }

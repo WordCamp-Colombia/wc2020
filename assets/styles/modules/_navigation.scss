@@ -17,13 +17,17 @@
   background-size: to-rem(26) to-rem(17);
   text-indent: -999em;
   border: none;
+  outline: none;
   @media #{$medium-up} {
     display: none;
   }
 }
 .toggled-on .menu-toggle {
-  background: transparent url('https://www.wpbq.org/wcco/cross.svg') no-repeat center;
   background-size: 18px 18px;
+  background: transparent url('https://www.wpbq.org/wcco/cross.svg') no-repeat center;
+  position: absolute;
+  right: to-rem(17);
+  top: to-rem(52);
 }
 .current-menu-item {
   a::after {
@@ -50,13 +54,31 @@
 }
 
 .main-navigation {
-  // background-color: rgba(0, 0, 0, 0.9);
-  // bottom: 0;
-  // left: 0;
-  // position: fixed;
-  // right: 0;
-  // top: 0;
-  // z-index: 99999;
+  @media #{$small-max} {
+    &.toggled-on{
+      background-color: rgba(0, 0, 0, 0.9);
+      bottom: 0;
+      left: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 99999;
+      .menu-main-menu-container {
+        display: block;
+        padding-top: to-rem(90);
+        .menu-item {
+          display: block;
+          margin-left: 0;
+          text-align: center;
+          margin-bottom: to-rem(30);
+          a {
+            display: inline-block;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
   .menu-main-menu-container {
     @media #{$small-max} {
       display: none;
