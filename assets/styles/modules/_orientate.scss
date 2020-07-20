@@ -1,0 +1,11 @@
+.orientate {
+  background: url("https://2020.colombia.wordcamp.org/files/2020/07/main-banner-bg@2x.png") #0F100E;
+  background-position: top left;
+  background-size: contain;
+  padding-bottom: to-rem(30);
+  padding-top: to-rem(30);
+  position: relative;
+  @media #{$medium-up} {
+    padding-top: to-rem(60);
+  }
+}
