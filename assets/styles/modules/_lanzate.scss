@@ -4,6 +4,7 @@
   position: relative;
   @media #{$medium-up} {
     padding-top: to-rem(60);
+    padding-bottom: to-rem(76);
   }
   &__content {
     font-size: to-rem(16);

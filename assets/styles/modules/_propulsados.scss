@@ -1,0 +1,25 @@
+.propulsados {
+  padding-top: to-rem(30);
+  padding-bottom: to-rem(30);
+  position: relative;
+  @media #{$medium-up} {
+    padding-top: to-rem(60);
+  }
+}
+.wordcamp-sponsors {
+  column-gap: to-rem(60);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  row-gap: to-rem(20);
+  align-items: center;
+  @media #{$medium-up} {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.wordcamp-image__featured-image {
+  height: auto;
+}
+.wordcamp-post-list .wordcamp-post-list__post {
+  margin: 0;
+}
