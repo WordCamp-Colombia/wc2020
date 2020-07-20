@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comments-area {
+	margin: 60px auto 0;
+	max-width: 620px;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+.comment-meta {
+	color: #747466;
+	font-weight: 700;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+.comment-meta a {
+	color: #747466;
+	text-decoration: none;
+}
+
+.comment-meta a:hover, .comment-meta a:active, .comment-meta a:focus {
+	text-decoration: underline;
+}
+
+.comment-list {
+	margin: 0 0 60px;
+	padding: 0;
+	list-style: none;
+}
+
+.comment-list .children {
+	padding: 30px 0 30px 30px;
+	list-style: none;
+}
+
+.comment-list .avatar {
+	float: left;
+	margin-right: 15px;
+	margin-top: 8px;
+}
+
+.comment-form label {
+	display: block;
+}
+
+.comment-form input {
+	width: 66%;
+}
+
+.comment-form .comment-form-cookies-consent label {
+	display: inline;
+}
+
+.comment-form .comment-form-cookies-consent input {
+	width: 16px;
+	height: 16px;
+	margin-right: 15px;
+}
+
+.comment-form .form-submit input {
+	width: auto;
+}
