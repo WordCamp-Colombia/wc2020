@@ -1,0 +1,33 @@
+.single {
+ .entry {
+    &-header {
+      background-color: $brand;
+      padding: to-rem(30) 0;
+      @media #{$medium-up} {
+        padding: to-rem(60) 0;
+      }
+    }
+    &-image {
+      @extend .container;
+      text-align: center;
+    }
+    &-content {
+      @extend .container;
+      max-width: to-rem(800);
+      padding-top: to-rem(30);
+      padding-bottom: to-rem(40);
+      @media #{$medium-up} {
+        padding-top: to-rem(60);
+        padding-bottom: to-rem(80);
+      }
+    }
+  }
+  .wp-post-image {
+    width: auto;
+    height: auto;
+    @media #{$medium-up} {
+      height: to-rem(436);
+      width: auto;
+    }
+  }
+}

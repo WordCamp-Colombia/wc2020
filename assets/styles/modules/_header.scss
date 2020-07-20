@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: to-rem(33);
-  padding-bottom: to-rem(18);
+  padding-bottom: to-rem(14);
   padding-top: to-rem(14);
   @extend %container;
   @media #{$medium-up} {
@@ -12,6 +12,7 @@
   }
 }
 .custom-logo {
+  display: block;
 	max-width: to-rem(140);
   height: auto;
   @media #{$medium-up} {
