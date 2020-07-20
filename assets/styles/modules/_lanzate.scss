@@ -11,6 +11,7 @@
     font-weight: 400;
     text-align: center;
     line-height: to-rem(20);
+    margin-top: 0;
     @media #{$medium-up} {
       font-size: to-rem(30);
       font-weight: 600;
@@ -20,19 +21,29 @@
   }
 }
 .comunidades {
+  align-items: center;
   column-gap: to-rem(20);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 0 to-rem(56);
   row-gap: to-rem(20);
-  align-items: center;
   @media #{$medium-up} {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 .comunidad {
+  background-color: $white;
+  border: 2px solid $color-text-body;
+  box-shadow: 10px -10px 0 $brand;
+  height: 100%;
+  padding: to-rem(10);
+  &__link {
+    display: block;
+    height: 100%;
+  }
   &__image {
     display: block;
+    height: 100%;
     margin: auto;
   }
 }

@@ -1,0 +1,55 @@
+.lates-posts {
+  column-gap: to-rem(40);
+  display: grid;
+  flex: 1 1 auto;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+  row-gap: to-rem(20);
+  @media #{$medium-up} {
+    column-gap: to-rem(60);
+    row-gap: to-rem(20);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .wp-block-latest-posts__featured-image {
+    box-shadow: 10px -10px 0 $brand;
+  }
+  .wp-block-latest-posts__featured-image + a,
+  li > a {
+    color:$brand;
+    font-size: to-rem(24);
+    font-weight: bold;
+    line-height: to-rem(28);
+  }
+  .wp-block-latest-posts__post-excerpt {
+    color: $white;
+  }
+  .more-link {
+    background-color: $white;
+    border: to-rem(2) solid $black;
+    display: block;
+    font-family: 'Archivo Black';
+    font-size: to-rem(15);
+    letter-spacing: to-rem(1.42);
+    line-height: 1;
+    margin-top: to-rem(24);
+    padding: to-rem(8) to-rem(20);
+    text-align: center;
+    text-transform: uppercase;
+    @media #{$medium-up} {
+      width: 220px;
+      text-align: left;
+    }
+    &::after {
+      content: "";
+      background-image: url("https://www.wpbq.org/wcco/arrow-up-more.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+      height: to-rem(14);
+      margin-left: to-rem(6);
+      vertical-align: middle;
+      width: to-rem(14);
+    }
+  }
+}

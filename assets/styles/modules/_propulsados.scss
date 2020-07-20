@@ -4,17 +4,22 @@
   position: relative;
   @media #{$medium-up} {
     padding-top: to-rem(60);
+    padding-bottom: to-rem(40);
   }
 }
 .wordcamp-sponsors {
-  column-gap: to-rem(60);
+  column-gap: to-rem(20);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   margin: 0;
   row-gap: to-rem(20);
   align-items: center;
+  padding: to-rem(45) 0;
+  flex: 1 1 auto;
   @media #{$medium-up} {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: to-rem(60);
+    row-gap: to-rem(20);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .wordcamp-image__featured-image {
