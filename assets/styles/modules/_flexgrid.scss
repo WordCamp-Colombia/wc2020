@@ -2,9 +2,11 @@
 .flexgrid {
   @extend %flexgrid;
 }
-
 .flexgrid--full {
   @extend %flexgrid--full;
+}
+.flexgrid--center {
+  @extend %flexgrid--center;
 }
 
 .xsmall--col-12 {
@@ -20,4 +22,7 @@
 }
 .medium--col-7 {
   @extend %medium--col-7;
+}
+.medium--col-10 {
+  @extend %medium--col-10;
 }

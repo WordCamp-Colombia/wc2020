@@ -5,3 +5,6 @@
 .hidden {
   @extend %hidden;
 }
+.color--pink {
+  color: $secondary-brand;
+}

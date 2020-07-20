@@ -3,6 +3,8 @@
   background-size: contain;
   background-position: top left;
   overflow: hidden;
+  padding-top: to-rem(35);
+  padding-bottom: to-rem(35);
   @media #{$medium-up} {
     padding-top: to-rem(123);
     padding-bottom: to-rem(35);
@@ -14,12 +16,16 @@
   }
   &__title {
     font-family: 'Archivo Black';
-    font-size: to-rem(84);
+    font-size: to-rem(42);
     line-height: 1;
-    margin-bottom: to-rem(99);
+    margin-bottom: to-rem(29);
     margin-top: 0ex;
+    @media #{$medium-up} {
+      font-size: to-rem(84);
+      margin-bottom: to-rem(99);
+    }
     &--white {
-      font-size: to-rem(54);
+      font-size: to-rem(27);
       color: $white;
       display: block;
       &.last {
@@ -33,39 +39,25 @@
       color: $secondary-brand;
     }
   }
-  &__cta {
-    background-color: $white;
-    display: inline-block;
+  .reserva__cta {
     float: right;
-    font-family: 'Archivo Black';
-    font-size: to-rem(18.71);
-    letter-spacing: to-rem(0.14);
-    line-height: 1;
-    margin-right: to-rem(23);
-    padding: to-rem(9) to-rem(24);
-    &::after {
-      content: "";
-      background-image: url("https://2020.colombia.wordcamp.org/files/2020/07/arrow-circle@2x.png");
-      background-repeat: no-repeat;
-      background-size: contain;
-      display: inline-block;
-      height: to-rem(27);
-      margin-left: to-rem(32);
-      vertical-align: middle;
-      width: to-rem(27);
+    margin-bottom: to-rem(20);
+    @media #{$medium-up} {
+      margin-bottom: 0;
     }
   }
   &__date {
     color: $white;
-    font-size: to-rem(22);
+    font-size: to-rem(16);
     font-weight: 600;
     letter-spacing: to-rem(0.1);
     line-height: to-rem(24);
+    text-align: center;
     @media #{$medium-up} {
+      font-size: to-rem(22);
       left: to-rem(124);
       max-width: to-rem(126);
       position: absolute;
-      text-align: center;
       top: to-rem(82);
     }
   }

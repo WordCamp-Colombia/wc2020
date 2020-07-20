@@ -1,0 +1,102 @@
+.introduction {
+  padding-top: to-rem(60);
+  position: relative;
+  &__title {
+    font-family: 'Archivo Black';
+    font-size: to-rem(36);
+    line-height: 1;
+    margin-bottom: to-rem(15);
+    margin-top: 0;
+    text-align: center;
+    @media #{$medium-up} {
+      font-size: to-rem(56);
+    }
+  }
+  &__subtitle {
+    color: $gray;
+    font-size: to-rem(20);
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: to-rem(26);
+    margin-top: 0;
+    text-align: center;
+    @media #{$medium-up} {
+      font-size: to-rem(32);
+      margin-bottom: to-rem(56);
+    }
+  }
+  .reserva__wrapper {
+    bottom: -20px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+  }
+}
+.boxes {
+  column-gap: to-rem(20);
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  row-gap: to-rem(20);
+  @media #{$medium-up} {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 to-rem(35);
+  }
+  .box {
+    background-color: $color-text-body;
+    text-align: center;
+    padding-top: to-rem(100);
+    position: relative;
+    &.first,
+    &.last {
+      @media #{$medium-up} {
+        margin-top: to-rem(60);
+        min-height: to-rem(364);
+      }
+    }
+    &__ribbon {
+      left: to-rem(12);
+      position: absolute;
+      top: to-rem(15);
+      width: 100%;
+      z-index: 1;
+    }
+    &__link {
+      background-color: $brand;
+      border: to-rem(2) solid $black;
+      display: block;
+      font-family: 'Archivo Black';
+      font-size: to-rem(22);
+      line-height: 1;
+      padding: to-rem(15);
+      &-icon {
+        margin-left: to-rem(30);
+      }
+    }
+    &__image {
+      position: relative;
+      @media #{$medium-up} {
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+      }
+    }
+  }
+}
+.earth {
+  &__container {
+    bottom: to-rem(-25);
+    position: absolute;
+    width: 100%;
+    @media #{$small-max} {
+      display: none;
+    }
+  }
+  &__image {
+    display: block;
+    margin: 0 auto;
+  }
+}
