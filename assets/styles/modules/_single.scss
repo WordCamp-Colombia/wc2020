@@ -14,6 +14,7 @@
   .wp-post-image {
     width: auto;
     height: auto;
+    display: block;
     @media #{$medium-up} {
       box-shadow: -10px 10px 0 $secondary-brand;
       height: to-rem(436);
