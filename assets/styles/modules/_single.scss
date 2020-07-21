@@ -15,6 +15,7 @@
     width: auto;
     height: auto;
     @media #{$medium-up} {
+      box-shadow: -10px 10px 0 $secondary-brand;
       height: to-rem(436);
       width: auto;
     }
@@ -41,7 +42,7 @@
     text-align: center;
   }
 }
-.type-wcb_sponsor .has-post-thumbnail {
+.type-wcb_sponsor.has-post-thumbnail {
   .entry-header {
     background-color: $brand;
     padding: to-rem(30) 0;
@@ -53,11 +54,12 @@
     text-align: center;
     max-width: to-rem(400);
     background: $white;
-    padding: t0-rem(30);
+    padding: to-rem(30);
     @media #{$medium-up} {
-      box-shadow: -10px 11px 0 $secondary-brand;
+      box-shadow: -10px 10px 0 $secondary-brand;
     }
     .wp-post-image {
+      box-shadow: none;
       width: auto;
       height: auto;
     }
