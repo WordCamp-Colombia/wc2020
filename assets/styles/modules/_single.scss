@@ -1,16 +1,5 @@
 .single {
  .entry {
-    &-header {
-      background-color: $brand;
-      padding: to-rem(30) 0;
-      @media #{$medium-up} {
-        padding: to-rem(60) 0;
-      }
-    }
-    &-image {
-      @extend .container;
-      text-align: center;
-    }
     &-content {
       @extend .container;
       max-width: to-rem(800);
@@ -37,4 +26,17 @@
       padding-bottom: to-rem(80);
     }
   }
+}
+.has-post-thumbnail {
+  .entry-header {
+      background-color: $brand;
+      padding: to-rem(30) 0;
+      @media #{$medium-up} {
+        padding: to-rem(60) 0;
+      }
+    }
+    .entry-image {
+      @extend .container;
+      text-align: center;
+    }
 }
