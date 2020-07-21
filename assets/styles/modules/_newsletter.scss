@@ -98,3 +98,68 @@
     }
   }
 }
+// Todo: Toco utilizar esta #¢#@@ de Jetpack :(
+.newsletter__right,
+.newsletter__right * {
+  height: 100%;
+}
+.jetpack_subscription_widget {
+  position: relative;
+  form {
+    align-items: center !important;
+    column-gap: 0;
+    display: grid !important;
+    flex: 1 1 auto;
+    grid-template-columns: 1fr !important;
+    row-gap: 0;
+    @media #{$medium-up} {
+      grid-template-columns: repeat(7,1fr) !important;
+    }
+    #subscribe-email {
+      grid-column-end: auto;
+      height: auto;
+      width: auto !important;
+      @media #{$medium-up} {
+        grid-column-end: span 4;
+      }
+      input {
+        border-radius: 0 !important;
+        height: auto;
+        width: 100% !important;
+      }
+    }
+    #subscribe-submit {
+      grid-column-end: auto;
+      height: auto;
+      @media #{$medium-up} {
+        grid-column-end: span 2;
+      }
+      button {
+        height: auto;
+        margin: 0 !important;
+        width: 100%;
+        @media #{$small-max} {
+          border-top-width: 0 !important;
+        }
+        @media #{$medium-up} {
+          border-left-width: 0 !important;
+        }
+      }
+    }
+  }
+  p.error,
+  .success p {
+    background-color: rgba(0, 0, 0, 0.9);
+    bottom: 0;
+    color: white;
+    font-size: 13px;
+    line-height: 1.3;
+    margin: auto;
+    padding: 10px 30px;
+    position: absolute;
+    top: 0;
+    a {
+      color: $brand;
+    }
+  }
+}
