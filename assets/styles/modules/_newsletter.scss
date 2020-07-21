@@ -1,0 +1,100 @@
+.newsletter {
+  background-color: $secondary-brand;
+  padding-top: to-rem(20);
+  padding-bottom: to-rem(30);
+  @media #{$medium-up} {
+    padding-top: to-rem(40);
+    padding-bottom: to-rem(60);
+  }
+  &__container,
+  &__left,
+  &__form {
+    align-items: center;
+    column-gap: 0;
+    display: grid;
+    flex: 1 1 auto;
+    grid-template-columns: 1fr;
+    row-gap: 0;
+    @media #{$medium-up} {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__left {
+    @media #{$medium-up} {
+      grid-template-columns: repeat(5,1fr);
+      column-gap: 0;
+    }
+  }
+  &__logo-wrapper {
+    @media #{$small-max} {
+      margin-bottom: to-rem(26);
+    }
+  }
+  &__logo {
+    display: block;
+    margin: auto;
+  }
+  &__text {
+    grid-column-end: auto;
+    text-align: center;
+    @media #{$medium-up} {
+      grid-column-end: span 4;
+      text-align: left;
+    }
+  }
+  &__title {
+    font-family: 'Archivo Black';
+    font-size: to-rem(28);
+    line-height: 1.3;
+    margin: 0;
+    @media #{$medium-up} {
+      font-size: to-rem(34);
+      line-height: 1;
+    }
+  }
+  &__paragraph {
+    color: $white;
+    font-size: to-rem(18);
+    line-height: 1.3;
+    font-weight: 600;
+    margin-top: 0;
+    @media #{$medium-up} {
+      font-size: to-rem(22);
+      line-height: 1;
+      margin: 0;
+    }
+  }
+  &__form {
+    @media #{$medium-up} {
+      grid-template-columns: repeat(7,1fr);
+      column-gap: 0;
+    }
+    &-email {
+      grid-column-end: auto;
+      @media #{$medium-up} {
+        grid-column-end: span 4;
+      }
+      &-input {
+        width: 100%;
+        border-radius: 0 !important;
+      }
+    }
+    &-submit {
+      grid-column-end: auto;
+      @media #{$medium-up} {
+        grid-column-end: span 3;
+      }
+      &-input {
+        padding: to-rem(16) to-rem(20) !important;
+        font-size: to-rem(24) !important;
+        width: 100%;
+        @media #{$small-max} {
+          border-top-width: 0 !important;
+        }
+        @media #{$medium-up} {
+          border-left-width: 0;
+        }
+      }
+    }
+  }
+}

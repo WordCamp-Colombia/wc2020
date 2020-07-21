@@ -73,9 +73,8 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #303030;
-	border: 1px solid #303030;
-	border-radius: 6px;
+	color: $color-text-body;
+	border: 2px solid $color-text-body;
 	padding: 13px 20px;
 }
 
@@ -105,7 +104,7 @@ textarea {
 
 select {
 	background-color: #fff;
-	border: 1px solid #303030;
+	border: 1px solid $color-text-body;
 	height: 40px;
 }
 
