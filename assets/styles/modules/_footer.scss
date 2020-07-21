@@ -1,0 +1,74 @@
+.site-footer {
+  background-color: $brand;
+}
+#footer-widget-2 {
+  @extend .container;
+  column-gap: 0;
+  display: grid;
+  flex: 1 1 auto;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: to-rem(50);
+  padding-top: to-rem(20);
+  row-gap: 20px;
+  @media #{$medium-up} {
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: to-rem(50);
+    padding-top: to-rem(41);
+    row-gap: 0;
+  }
+  .widget-title {
+    background-color: $white;
+    display: inline-block;
+    font-family: 'Archivo Black';
+    font-size: to-rem(14);
+    letter-spacing: to-rem(0.14);
+    line-height: to-rem(20);
+    margin-top: 0;
+    text-transform: uppercase;
+    border: to-rem(1.4) solid $color-text-body;
+    padding: to-rem(8) to-rem(40) to-rem(8) to-rem(14);
+    @media #{$medium-up} {
+      font-size: to-rem(16);
+      padding-right: to-rem(54);
+    }
+  }
+  .widget-subtitle,
+  .widget-link {
+    font-size: to-rem(15);
+    font-weight: bold;
+    line-height: to-rem(20);
+    margin-bottom: 0;
+    margin-top: 0;
+    @media #{$medium-up} {
+      font-size: to-rem(18);
+    }
+  }
+  .footer__image {
+    display: block;
+    margin: auto;
+    @media #{$small-max} {
+      max-width: 80%;
+    }
+  }
+  .menu-item {
+    font-family: $font-family-base;
+    font-weight: bold;
+    line-height: to-rem(20);
+    display: block;
+    margin-left: 0;
+    margin-bottom: to-rem(10);
+  }
+}
+.social {
+  &__list {
+    font-size: 0;
+    padding-top: to-rem(15);
+  }
+  &__link {
+    display: inline-block;
+    margin-right: to-rem(15);
+  }
+  &__icon {
+    display: block;
+  }
+}

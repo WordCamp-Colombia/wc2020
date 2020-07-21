@@ -12,11 +12,11 @@
 }
 .menu-toggle {
   background-size: to-rem(26) to-rem(17);
-  background: transparent url('https://www.wpbq.org/wcco/hamburger.svg') no-repeat center;
+  background: transparent url('https://www.wpbq.org/wcco/hamburger.svg') no-repeat center !important;
   border: none;
   cursor: pointer;
   display: inline-block;
-  outline: none;
+  outline: none !important;
   padding: to-rem(5) to-rem(10);
   text-indent: -999em;
   @media #{$medium-up} {
@@ -25,10 +25,11 @@
 }
 .toggled-on .menu-toggle {
   background-size: 18px 18px;
-  background: transparent url('https://www.wpbq.org/wcco/cross.svg') no-repeat center;
+  background: transparent url('https://www.wpbq.org/wcco/cross.svg') no-repeat center !important;
   position: absolute;
   right: to-rem(17);
   top: to-rem(52);
+  outline: none !important;
 }
 .current-menu-item {
   a::after {
