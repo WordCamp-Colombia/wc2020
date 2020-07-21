@@ -19,6 +19,9 @@
     @media #{$medium-up} {
       margin-right: to-rem(23);
     }
+    &:hover {
+	    background-color: $secondary-brand;
+    }
     &::after {
       content: "";
       background-image: url("https://2020.colombia.wordcamp.org/files/2020/07/arrow-circle@2x.png");
@@ -32,6 +35,9 @@
     }
     &--pink {
       background-color: $secondary-brand;
+      &:hover {
+	      background-color: $white;
+      }
     }
   }
 }

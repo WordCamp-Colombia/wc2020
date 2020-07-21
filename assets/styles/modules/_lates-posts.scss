@@ -40,6 +40,9 @@
       width: 220px;
       text-align: left;
     }
+    &:hover {
+	    background-color: $secondary-brand;
+    }
     &::after {
       content: "";
       background-image: url("https://www.wpbq.org/wcco/arrow-up-more.svg");

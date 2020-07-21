@@ -66,6 +66,9 @@
         margin-left: to-rem(30);
         vertical-align: middle;
       }
+      &:hover {
+	      background-color: $secondary-brand;
+      }
     }
     &__image {
       position: relative;

@@ -1,4 +1,5 @@
-.single {
+.single,
+.page {
  .entry {
     &-content {
       @extend .container;
