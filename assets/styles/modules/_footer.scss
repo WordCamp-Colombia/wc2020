@@ -72,3 +72,27 @@
     display: block;
   }
 }
+.copyright {
+  background-color: $color-text-body;
+  color: $white;
+  text-align: center;
+  padding: to-rem(10) 0;
+  a {
+    color: $white;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: #ff6c6c;
+    }
+  }
+  &__icon {
+    margin-left: to-rem(10);
+    margin-right: to-rem(10);
+    vertical-align: middle;
+    @media #{$small-max} {
+      display: block;
+      margin: auto;
+      margin-top: to-rem(5);
+      margin-bottom: to-rem(5);
+    }
+  }
+}
