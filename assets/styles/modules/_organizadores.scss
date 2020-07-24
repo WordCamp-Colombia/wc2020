@@ -14,43 +14,43 @@
     row-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
   }
-}
-.wordcamp-post-list__post {
-  background-color: #ffffff;
-  border-bottom-width: 2px;
-  border-radius: 4px;
-  border: 1px solid #eaeaea;
-  padding: 8px;
-  position: relative;
-  margin-bottom: 20px;
-  img.avatar {
-    object-fit: cover;
-    height: 300px;
-    display: block;
-    margin: auto;
+  .wordcamp-post-list__post {
+    background-color: #ffffff;
+    border-bottom-width: 2px;
+    border-radius: 4px;
+    border: 1px solid #eaeaea;
+    padding: 8px;
+    position: relative;
+    margin-bottom: 20px;
+    img.avatar {
+      object-fit: cover;
+      height: 300px;
+      display: block;
+      margin: auto;
+    }
   }
-}
-.wordcamp-block__item-content.wordcamp-organizers__content.is-excerpt {
-  background-color: #FFF56C;
-  border: solid 1px #000000;
-  box-shadow: 1px 0px 0px #000000, 0px -1px 0px #000000, 2px -1px 0px #000000, 1px -2px 0px #000000, 3px -2px 0px #000000, 2px -3px 0px #000000, 4px -3px 0px #000000, 3px -4px 0px #000000, 5px -4px 0px #000000, 4px -5px 0px #000000, 6px -5px 0px #000000, 5px -6px 0px #000000, 7px -6px 0px #000000, 6px -7px 0px #000000, 8px -7px 0px #000000, 7px -8px 0px #000000, 9px -8px 0px #000000, 8px -8px 0px #000000;
-  font-size: to-rem(14);
-  letter-spacing: to-rem(0.1);
-  font-family: 'Archivo Black';
-  padding: to-rem(6) to-rem(16);
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: margin-bottom 0.3s ease, margin-left 0.3s ease, box-shadow 0.3s ease;
-  bottom: 20px;
-  font-family: inherit;
-  font-weight: bold;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  width: 85%;
-  p {
-    margin: 0;
+  .wordcamp-block__item-content.wordcamp-organizers__content.is-excerpt {
+    background-color: #FFF56C;
+    border: solid 1px #000000;
+    box-shadow: 1px 0px 0px #000000, 0px -1px 0px #000000, 2px -1px 0px #000000, 1px -2px 0px #000000, 3px -2px 0px #000000, 2px -3px 0px #000000, 4px -3px 0px #000000, 3px -4px 0px #000000, 5px -4px 0px #000000, 4px -5px 0px #000000, 6px -5px 0px #000000, 5px -6px 0px #000000, 7px -6px 0px #000000, 6px -7px 0px #000000, 8px -7px 0px #000000, 7px -8px 0px #000000, 9px -8px 0px #000000, 8px -8px 0px #000000;
+    font-size: to-rem(14);
+    letter-spacing: to-rem(0.1);
+    font-family: 'Archivo Black';
+    padding: to-rem(6) to-rem(16);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: margin-bottom 0.3s ease, margin-left 0.3s ease, box-shadow 0.3s ease;
+    bottom: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 85%;
+    p {
+      margin: 0;
+    }
   }
 }
