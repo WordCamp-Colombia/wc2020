@@ -129,8 +129,11 @@
   padding: 5px 20px;
 }
 
-.tix_tickets_table tr {
-
+.tix-ticket-form td.tix-left,
+.tix-private-form td.tix-left,
+.tix-attendee-form td.tix-left,
+.tix-receipt-form td.tix-left {
+  width: 60%;
 }
 
 @media (max-width: 680px) {

@@ -105,7 +105,8 @@ textarea {
 select {
 	background-color: #fff;
 	border: 1px solid $color-text-body;
-	height: 40px;
+  height: 40px;
+  width: 100%;
 }
 
 select:focus {
