@@ -6,9 +6,10 @@
   display: grid;
   flex: 1 1 auto;
   grid-template-columns: 1fr;
-  padding-top: to-rem(50);
   padding-bottom: to-rem(60);
+  padding-top: to-rem(50);
   position: relative;
+  row-gap: 30px;
   @media #{$medium-up} {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -28,14 +29,15 @@
 }
 .wordcamp-block__item-content.wordcamp-organizers__content.is-excerpt {
   @extend .button--box;
-  position: absolute;
-  left: 0;
   bottom: 20px;
-  width: 85%;
+  font-family: inherit;
   font-weight: bold;
-  right: 0;
+  left: 0;
   margin: auto;
-  font-family: initial;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 85%;
   p {
     margin: 0;
   }
