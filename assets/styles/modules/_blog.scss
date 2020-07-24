@@ -1,0 +1,25 @@
+.page-slug-noticias {
+  .wp-block-latest-posts__list {
+    padding: to-rem(30) 0;
+    @media #{$medium-up} {
+      padding: to-rem(60) 0;
+    }
+    .wp-post-image {
+      height: to-rem(213);
+      object-fit: cover;
+    }
+  }
+  .wp-block-latest-posts__featured-image + a,
+  li > a {
+    color: $color-text-body;
+    font-weight: 600;
+    font-size: to-rem(18);
+    line-height: 1;
+  }
+  .wp-block-latest-posts__post-excerpt {
+    color: $color-text-body;
+  }
+  .lates-posts .wp-block-latest-posts__featured-image {
+    margin-bottom: to-rem(20);
+  }
+}
