@@ -6,6 +6,8 @@
   display: grid;
   flex: 1 1 auto;
   grid-template-columns: 1fr;
+  padding-top: to-rem(50);
+  padding-bottom: to-rem(60);
   position: relative;
   @media #{$medium-up} {
     grid-template-columns: repeat(4, 1fr);
@@ -21,5 +23,18 @@
     object-fit: cover;
     height: 300px;
     display: block;
+  }
+}
+.wordcamp-block__item-content.wordcamp-organizers__content.is-excerpt {
+  @extend .button--box;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 85%;
+  font-weight: bold;
+  right: 0;
+  margin: auto;
+  p {
+    margin: 0;
   }
 }
