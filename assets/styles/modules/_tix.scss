@@ -1,0 +1,144 @@
+.page-slug-reserva-tu-silla .site-content {
+  background-color: #e0e0e0;
+}
+#tix {
+
+}
+
+.tix_tickets_table {
+	border: 4px dotted #9e8b7e;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-collapse: inherit;
+  border-spacing: inherit;
+  width: 100%;
+  padding: 30px 30px;
+}
+
+.tix_tickets_table th:last-child,
+  .tix_tickets_table td:last-child {
+	text-align: right;
+}
+
+.tix_tickets_table .tix-ticket-excerpt {
+	display: block;
+	max-width: 620px;
+	color: rgba(48,48,48,0.8);
+	font-weight: 400;
+}
+
+.tix_tickets_table .tix-column-description {
+	text-align: left;
+	font-weight: 700;
+}
+
+.tix_tickets_table tbody .tix-column-description {
+	border-top: 1px solid rgba(126,161,184,0.2);
+}
+
+.tix_tickets_table .tix-column-price {
+	text-align: right;
+	font-weight: 700;
+}
+
+.tix_tickets_table .tix-column-quantity select {
+	min-width: 4em;
+}
+
+.tix_tickets_table .tix-column-remaining {
+	display: none;
+}
+
+.tix_tickets_table th[colspan="2"] {
+	text-align: left;
+}
+
+.tix_tickets_table .tix-row-question-1300 .tix-right,
+  .tix_tickets_table .tix-row-question-1291 .tix-right,
+  .tix_tickets_table .tix-row-question-1318 .tix-right,
+  .tix_tickets_table .tix-row-question-1296 .tix-right,
+  .tix_tickets_table .tix-row-question-1297 .tix-right,
+  .tix_tickets_table .tix-row-question-1298 .tix-right,
+  .tix_tickets_table .tix-row-question-1299 .tix-right,
+  .tix_tickets_table .tix-row-question-1301 .tix-right,
+  .tix_tickets_table .tix-row-privacy .tix-right,
+  .tix_tickets_table .tix-row-allergy .tix-right,
+  .tix_tickets_table .tix-row-accommodations .tix-right,
+  .tix_tickets_table .tix-row-coc .tix-right {
+	text-align: left;
+}
+
+#tix .tix-submit .tix-checkout-button {
+  -webkit-font-smoothing: antialiased;
+	background-color: $white;
+	transition: all .1s ease-in-out;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: all .1s ease-in-out;
+  border-radius: 0;
+  border: to-rem(2) solid $black;
+  cursor: pointer;
+  color: #000;
+  display: inline-block;
+  font-family: 'Archivo Black';
+  font-size: to-rem(18.71);
+  letter-spacing: to-rem(0.14);
+  line-height: 1;
+  padding: to-rem(9) to-rem(24);
+  text-transform: uppercase;
+  @media #{$medium-up} {
+    margin-right: to-rem(23);
+  }
+}
+
+@media (max-width: 680px) {
+	.tix_tickets_table {
+		display: block;
+	}
+
+	.tix_tickets_table thead .tix-column-description,
+	      .tix_tickets_table thead .tix-column-per-ticket,
+	      .tix_tickets_table thead .tix-column-price,
+	      .tix_tickets_table thead .tix-column-quantity {
+		display: none;
+	}
+
+	.tix_tickets_table tbody .tix-column-description,
+	      .tix_tickets_table tbody .tix-column-per-ticket,
+	      .tix_tickets_table tbody .tix-column-price,
+	      .tix_tickets_table tbody .tix-column-quantity {
+		display: block;
+		padding-right: 0;
+		padding-left: 0;
+		text-align: left;
+		border-top: none;
+	}
+
+	.tix_tickets_table tbody .tix-column-per-ticket,
+	      .tix_tickets_table tbody .tix-column-price,
+	      .tix_tickets_table tbody .tix-column-quantity {
+		padding-top: 0;
+		border-top: none;
+	}
+
+	.tix_tickets_table tbody .tix-column-description {
+		width: 100%;
+	}
+
+	.tix_tickets_table tbody .tix-column-per-ticket::before {
+		content: "Precio de la entrada: ";
+	}
+
+	.tix_tickets_table tbody .tix-column-price::before {
+		content: "Precio: ";
+		font-weight: 400;
+	}
+
+	.tix_tickets_table tbody .tix-column-quantity {
+		padding-top: 0;
+	}
+
+	.tix_tickets_table tbody .tix-column-quantity::before {
+		content: "Cantidad:";
+		margin-right: 15px;
+	}
+}
