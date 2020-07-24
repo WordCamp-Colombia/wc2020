@@ -135,7 +135,12 @@
 .tix-receipt-form td.tix-left {
   width: 60%;
 }
-
+td.tix-column-quantity {
+  text-align: center;
+    select {
+      width: auto;
+  }
+}
 @media (max-width: 680px) {
 	.tix_tickets_table {
 		display: block;
