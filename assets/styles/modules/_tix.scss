@@ -13,11 +13,16 @@
   border-spacing: inherit;
   width: 100%;
   padding: 30px 30px;
+  border-spacing: 0 1em;
 }
 
-.tix_tickets_table th:last-child,
-  .tix_tickets_table td:last-child {
-	text-align: right;
+.tix-order-summary td.tix-column-per-ticket,
+.tix-order-summary td.tix-column-quantity {
+  text-align: center;
+}
+
+.tix-row-total td:last-child {
+  text-align: right;
 }
 
 .tix_tickets_table .tix-ticket-excerpt {
@@ -68,6 +73,10 @@
 	text-align: left;
 }
 
+#tix .tix-submit {
+  float: none;
+}
+
 #tix .tix-submit .tix-checkout-button {
   -webkit-font-smoothing: antialiased;
 	background-color: $white;
@@ -88,6 +97,40 @@
   @media #{$medium-up} {
     margin-right: to-rem(23);
   }
+  &:hover,
+  &:active,
+  &:focus {
+    color: #000;
+    background-color: $secondary-brand;
+  }
+  &:focus {
+    outline: 2px dotted $secondary-brand;
+    outline-offset: 2px;
+  }
+}
+
+.tix-ticket-form input[type="text"],
+.tix-ticket-form input[type="email"],
+.tix-ticket-form input[type="url"],
+.tix-ticket-form textarea,
+.tix-private-form input[type="text"],
+.tix-private-form input[type="email"],
+.tix-private-form input[type="url"],
+.tix-private-form textarea,
+.tix-attendee-form input[type="text"],
+.tix-attendee-form input[type="email"],
+.tix-attendee-form input[type="url"],
+.tix-attendee-form textarea,
+.tix-receipt-form input[type="text"],
+.tix-receipt-form input[type="email"],
+.tix-receipt-form input[type="url"],
+.tix-receipt-form textarea {
+  width: 100%;
+  padding: 5px 20px;
+}
+
+.tix_tickets_table tr {
+
 }
 
 @media (max-width: 680px) {
