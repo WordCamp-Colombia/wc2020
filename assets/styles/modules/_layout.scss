@@ -26,7 +26,9 @@ hr {
 .container {
   @extend %container;
 }
-
+.site-content {
+  background-color: #f9f9f9;
+}
 .section {
   &__title {
     font-family: 'Archivo Black';
