@@ -1,17 +1,25 @@
 
 .organizadores {
-	max-width: 1190px;
-    max-width: 74.375rem;
-    margin: 0 auto;
-    position: relative;
-    padding: 0 15px;
+  @extend .container;
 	column-gap: .75rem;
-    display: grid;
-    flex: 1 1 auto;
+  align-items: center;
+  display: grid;
+  flex: 1 1 auto;
+  grid-template-columns: 1fr;
+  position: relative;
+  @media #{$medium-up} {
     grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    margin-bottom: 1.25rem;
+  }
 }
 .wordcamp-post-list__post {
-	background-color: #ffffff;
+  background-color: #ffffff;
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+  padding: 8px;
+  img.avatar {
+    object-fit: cover;
+    height: 300px;
+    display: block;
+  }
 }
