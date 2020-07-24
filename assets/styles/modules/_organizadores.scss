@@ -9,8 +9,9 @@
   padding-bottom: to-rem(60);
   padding-top: to-rem(50);
   position: relative;
-  row-gap: 30px;
+  row-gap: 20px;
   @media #{$medium-up} {
+    row-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
   }
 }
