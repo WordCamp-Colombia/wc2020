@@ -40,6 +40,9 @@
     text-align: center;
     padding-top: to-rem(100);
     position: relative;
+    @media #{$small-max} {
+      margin-bottom: to-rem(20);
+    }
     &.first,
     &.last {
       @media #{$medium-up} {
