@@ -4,10 +4,10 @@
     &-content {
       @extend .container;
       max-width: to-rem(800);
-      padding-top: to-rem(30);
+      padding-top: to-rem(10);
       padding-bottom: to-rem(40);
       @media #{$medium-up} {
-        padding-top: to-rem(60);
+        padding-top: to-rem(20);
       }
     }
   }
@@ -55,9 +55,9 @@
 .type-wcb_sponsor.has-post-thumbnail {
   .entry-header {
     background-color: $brand;
-    padding: to-rem(30) 0;
+    padding: to-rem(30) 0 0;
     @media #{$medium-up} {
-      padding: to-rem(60) 0;
+      padding: to-rem(60) 0 0;
     }
   }
   .entry-image {
