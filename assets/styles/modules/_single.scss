@@ -1,6 +1,5 @@
 .single,
-.page-template-default,
-.page-slug-organizadores {
+.page-template-default {
  .entry {
     &-content {
       @extend .container;
@@ -73,6 +72,20 @@
       box-shadow: none;
       width: auto;
       height: auto;
+    }
+  }
+}
+
+.single,
+.page-slug-organizadores {
+ .entry {
+    &-content {
+      @extend .container;
+      padding-top: to-rem(10);
+      padding-bottom: to-rem(40);
+      @media #{$medium-up} {
+        padding-top: to-rem(20);
+      }
     }
   }
 }
