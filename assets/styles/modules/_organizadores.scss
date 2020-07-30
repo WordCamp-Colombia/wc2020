@@ -79,9 +79,12 @@ ul.tix-attendee-list.tix-columns-4 {
   border: 1px solid #eaeaea;
   padding: 8px 8px 44px;
   position: relative;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   height: auto;
   float: none;
+  @media #{$medium-up} {
+    margin-bottom: 20px;
+  }
 }
 
 #tix-attendees .avatar {
