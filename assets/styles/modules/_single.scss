@@ -41,9 +41,9 @@
 .has-post-thumbnail {
   .entry-header {
     background-color: $brand;
-    padding: to-rem(30) 0;
+    padding: to-rem(30) 0 0;
     @media #{$medium-up} {
-      padding: to-rem(60) 0;
+      padding: to-rem(60) 0 0;
     }
   }
   .entry-image {
