@@ -30,6 +30,13 @@
       padding-bottom: to-rem(80);
     }
   }
+  .entry-title {
+    display: block;
+    text-align: center;
+    background: #f9f9f9;
+    padding-top: to-rem(50);
+    font-size: to-rem(43);
+  }
 }
 .has-post-thumbnail {
   .entry-header {
@@ -42,6 +49,7 @@
   .entry-image {
     @extend .container;
     text-align: center;
+    margin-bottom: to-rem(60);
   }
 }
 .type-wcb_sponsor.has-post-thumbnail {
