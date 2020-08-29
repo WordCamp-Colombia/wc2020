@@ -81,6 +81,9 @@
     img {
       display: block;
       object-fit: cover;
+      height: auto;
+      width: auto;
+      margin-bottom: to-rem(10);
     }
   }
 }
