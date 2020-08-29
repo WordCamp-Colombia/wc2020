@@ -1,0 +1,96 @@
+.organizadores-wcco {
+  padding: to-rem(30) 0;
+  @media #{$medium-up} {
+    padding: to-rem(60) 0;
+  }
+  .section__title {
+    margin-bottom: to-rem(40);
+  }
+  &__list {
+    column-gap: to-rem(20);
+    row-gap: to-rem(20);
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    row-gap: to-rem(20);
+    align-items: center;
+    flex: 1 1 auto;
+    @media #{$medium-up} {
+      column-gap: to-rem(30);
+      row-gap: to-rem(30);
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__item {
+    border: 2px solid #333333;
+    padding: to-rem(47) to-rem(15);
+    box-shadow: -15px 15px 0 #FF6C6C;
+    @media #{$medium-up} {
+      min-height: to-rem(400);
+    }
+  }
+  &__header {
+    column-gap: to-rem(15);
+    row-gap: to-rem(15);
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    row-gap: to-rem(20);
+    align-items: center;
+    flex: 1 1 auto;
+    @media #{$medium-up} {
+      grid-template-columns: min-content auto;
+    }
+  }
+  &__lead-social {
+    a {
+      font-family: Archivo Black;
+      color: #9E2A43;
+      text-decoration: none !important;
+    }
+  }
+  &__lead-name {
+    font-size: to-rem(28);
+    line-height: to-rem(30);
+    font-family: Archivo Black;
+    margin-bottom: to-rem(21);
+  }
+  &__lead-position {
+    text-transform: uppercase;
+    font-family: Archivo Black;
+    font-size: 1rem;
+    background-color: #fff56c;
+    border: 1px solid #000;
+    display: inline-block;
+    padding: to-rem(8) to-rem(20);
+    line-height: 1;
+    font-weight: 400;
+    text-align: center;
+  }
+  &__content {
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  &__image {
+    @media #{$medium-up} {
+      width: to-rem(150);
+      height: to-rem(150);
+    }
+    img {
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
+.voluntarios-wcco {
+  padding: to-rem(30) 0;
+  @media #{$medium-up} {
+    padding: to-rem(60) 0;
+  }
+  .section__title {
+    margin-bottom: to-rem(40);
+  }
+  #tix-attendees .avatar {
+    width: 150px;
+  }
+}
