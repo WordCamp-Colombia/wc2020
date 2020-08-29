@@ -25,8 +25,10 @@
     border: 2px solid #333333;
     padding: to-rem(47) to-rem(15);
     box-shadow: -15px 15px 0 #FF6C6C;
+    margin-bottom: to-rem(20);
     @media #{$medium-up} {
       min-height: to-rem(400);
+      margin-bottom: to-rem(30);
     }
   }
   &__header {
