@@ -107,7 +107,7 @@
 		border: .375rem solid transparent;
 		margin-left: .5rem;
 		vertical-align: middle;
-		border-top-color: #e6aa50;
+		border-top-color: #000;
 		content: "";
 	}
 
@@ -118,7 +118,6 @@
 
 	.menu-item-has-children.focus>a,.menu-item-has-children:hover>a {
 		color: rgba(29,36,42,.9);
-		background-color: #c96;
 	}
 
 	.menu-item-has-children.focus>a:after,.menu-item-has-children:hover>a:after {
