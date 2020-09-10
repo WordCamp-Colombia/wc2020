@@ -31,15 +31,7 @@
   top: to-rem(52);
   outline: none !important;
 }
-.current-menu-item {
-  a::after {
-    content: "";
-    height: to-rem(3);
-    background-color: $brand;
-    width: 100%;
-    display: block;
-  }
-}
+
 .button--box {
   @media #{$medium-up} {
     background-color: #FFF56C;
