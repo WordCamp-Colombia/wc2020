@@ -134,7 +134,10 @@
 .sub-menu .menu-item {
 	text-transform: none;
 	font-weight: 400;
+}
 
+.sub-menu .menu-item:hover {
+  background: #fbd053;
 }
 
 @media (max-width:37.4375em) {
@@ -143,7 +146,8 @@
 		background-image: url('https://2017.europe.wordcamp.org/files/2017/01/decoration-bullet-color.png');
 		background-repeat: no-repeat;
 		background-size: 12px;
-		background-position: 1rem 50%;
+    background-position: 1rem 50%;
+    display: block;
 	}
 
 	.sub-menu a.focus,.sub-menu a:focus,.sub-menu a:hover {
@@ -157,7 +161,7 @@
 		top: 100%;
 		left: -999em;
 		z-index: 310;
-		min-width: 16.25rem;
+		min-width: 10.25rem;
 		background-color: #fb6c6c;
 	}
 
