@@ -87,3 +87,113 @@
     }
   }
 }
+.menu-item-has-children {
+  position: relative;
+}
+
+.menu-item-has-children .dropdown-toggle {
+	display: none;
+}
+
+@media (min-width:37.5em) {
+	.menu-item-has-children {
+		background-color: transparent;
+	}
+
+	.menu-item-has-children>a:after {
+		position: relative;
+		top: 2px;
+		display: inline-block;
+		border: .375rem solid transparent;
+		margin-left: .5rem;
+		vertical-align: middle;
+		border-top-color: #e6aa50;
+		content: "";
+	}
+
+	.menu-item-has-children>a .dropdown-toggle {
+		display: inline-block;
+		display: none;
+	}
+
+	.menu-item-has-children.focus>a,.menu-item-has-children:hover>a {
+		color: rgba(29,36,42,.9);
+		background-color: #c96;
+	}
+
+	.menu-item-has-children.focus>a:after,.menu-item-has-children:hover>a:after {
+		border-top-color: rgba(29,36,42,.9);
+	}
+
+	.menu-item-has-children.focus>.sub-menu,.menu-item-has-children:hover>.sub-menu {
+		left: 0;
+	}
+
+	.menu-item-has-children.current-menu-item>a:after {
+		border-top-color: rgba(29,36,42,.9);
+	}
+}
+
+.sub-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sub-menu .menu-item {
+	text-transform: none;
+	font-weight: 400;
+
+}
+
+@media (max-width:37.4375em) {
+	.sub-menu a {
+		padding-left: 2.5rem;
+		background-image: url('https://2017.europe.wordcamp.org/files/2017/01/decoration-bullet-color.png');
+		background-repeat: no-repeat;
+		background-size: 12px;
+		background-position: 1rem 50%;
+	}
+
+	.sub-menu a.focus,.sub-menu a:focus,.sub-menu a:hover {
+		background-image: url('https://2017.europe.wordcamp.org/files/2017/01/decoration-bullet-dark.png');
+	}
+}
+
+@media (min-width:37.5em) {
+	.sub-menu {
+		position: absolute;
+		top: 100%;
+		left: -999em;
+		z-index: 310;
+		min-width: 16.25rem;
+		background-color: #fb6c6c;
+	}
+
+	.sub-menu .menu-item {
+		width: 100%;
+		margin: 0;
+		border-top: 1px solid hsla(0,0%,100%,.2);
+		text-align: left;
+	}
+
+	.sub-menu a {
+		padding: .625rem 1rem;
+    color: rgba(29,36,42,.75);
+    font-family: Archivo Black;
+	}
+}
+
+@media (min-width:48em) {
+	.sub-menu a {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
+
+@media (min-width:62em) {
+	.sub-menu a {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
